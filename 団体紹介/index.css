@@ -73,10 +73,10 @@ section {
 
 /* there should be only three things in the burger */
 .top-bar__burger > * {
-  width: 0.8em;
-  height: 0.1111em;
-  margin: 0.1111em 0;
-  background-color: #eee;
+  width: 1em;
+  height: 0.15em;
+  margin: 0.15em 0;
+  background-color: var(--white);
 }
 
 .top-bar__nav {
