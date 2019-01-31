@@ -10,7 +10,10 @@ html {
 
 body {
   margin: 0;
-  padding: 0.5rem;
+}
+
+main {
+  padding: 0 0.5rem;
 }
 
 section {
