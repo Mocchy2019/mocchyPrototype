@@ -11,28 +11,28 @@ html {
 body {
   max-width: 70ch;
   margin: 0 auto;
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 section {
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
 .bg-red { background-color: #c33; }
 .bg-green { background-color: #3c3; }
 .fg-white { color: #eee; }
 .ta-c { text-align: center; }
-.fz-1-5 { font-size: 1.5em; }
-.pv-0-2 { padding-top: 0.2em; padding-bottom: 0.2em; }
-.pv-0-5 { padding-top: 0.5em; padding-bottom: 0.5em; }
-.ph-0-5 { padding-left: 0.5em; padding-right: 0.5em; }
+.fz-1-5 { font-size: 1.5rem; }
+.pv-0-2 { padding-top: 0.2rem; padding-bottom: 0.2rem; }
+.pv-0-5 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.ph-0-5 { padding-left: 0.5rem; padding-right: 0.5rem; }
 .m-0 { margin: 0; }
-.mv-0-5 { margin-top: 0.5em; margin-bottom: 0.5em; }
+.mv-0-5 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 .g-v-ctr { align-self: center; }
 .g-h-ctr { justify-self: center; }
 .g-h-right { justify-self: right; }
 .mw-100 { max-width: 100%; }
-.rounded { border-radius: 1em; }
+.rounded { border-radius: 1rem; }
 .circle { border-radius: 100%; }
 .click { cursor: pointer; }
 .x-scroll {
@@ -46,7 +46,7 @@ section {
 
 .top-bar {
   display: grid;
-  grid-template-columns: 2em 1fr 2em;
+  grid-template-columns: 2rem 1fr 2rem;
   grid-template-areas:
     ". title burger"
     "nav nav nav";
@@ -72,8 +72,8 @@ section {
 
 .group {
   display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: 5em 1fr 8em;
+  grid-gap: 0.5rem;
+  grid-template-columns: 5rem 1fr 8rem;
   grid-template-areas:
     "icon name view"
     "icon desc desc"
@@ -82,7 +82,7 @@ section {
 
 @media screen and (max-width: 600px) {
   .group {
-    grid-template-columns: 4em 1fr;
+    grid-template-columns: 4rem 1fr;
     grid-template-areas:
       "icon name"
       "icon view"
@@ -99,8 +99,8 @@ section {
 
 .voice {
   display: grid;
-  grid-template-columns: 3em 1fr;
-  grid-gap: 0.5em;
+  grid-template-columns: 3rem 1fr;
+  grid-gap: 0.5rem;
   grid-template-areas:
     "icon title"
     "quote quote";
