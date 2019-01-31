@@ -65,7 +65,7 @@ section {
   cursor: pointer;
 }
 
-.top-bar__burger-item {
+.top-bar__burger * {
   width: 0.8em;
   height: 0.1111em;
   margin: 0.1111em 0;
