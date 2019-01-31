@@ -118,6 +118,7 @@ section {
   display: grid;
   grid-gap: 0.5rem;
   grid-auto-flow: column;
+  justify-content: start;
   overflow-x: auto;
   font-size: 0;
   -webkit-overflow-scrolling: touch;
