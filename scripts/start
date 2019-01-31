@@ -2,4 +2,10 @@
 
 set -eu
 cd "$(git rev-parse --show-toplevel)"
-exec ruby -run -e httpd '団体紹介' -p 3000
+
+if [ "$#" -ne 1 ]; then
+  echo "usage: $0 <dir>"
+  exit 1
+fi
+
+exec ruby -run -e httpd "$1" -p 3000
