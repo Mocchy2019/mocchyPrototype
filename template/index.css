@@ -32,6 +32,7 @@ body {
 
 main {
   padding: var(--top-bar-height) var(--gutter) 0;
+  min-height: 100vh;
 }
 
 section {
