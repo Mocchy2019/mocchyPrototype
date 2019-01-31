@@ -11,6 +11,11 @@ html {
   line-height: 1.3;
 }
 
+a,
+a:visited {
+  color: inherit;
+}
+
 .no-scroll {
   position: fixed;
   width: 100%;
