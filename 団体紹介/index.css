@@ -34,6 +34,7 @@ section {
 .mw-100 { max-width: 100%; }
 .rounded { border-radius: 1em; }
 .circle { border-radius: 100%; }
+.click { cursor: pointer; }
 .x-scroll {
   display: grid;
   grid-gap: 0.5rem;
@@ -41,6 +42,32 @@ section {
   overflow-x: auto;
   font-size: 0;
   -webkit-overflow-scrolling: touch;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 2em 1fr 2em;
+  grid-template-areas:
+    ". title burger"
+    "nav nav nav";
+}
+
+.top-bar__title { grid-area: title; }
+.top-bar__burger { grid-area: burger; }
+.top-bar__nav {
+  grid-area: nav;
+  display: none;
+}
+
+.top-bar__nav--open {
+  display: initial;
+}
+
+.top-bar__burger-item {
+  width: 0.8em;
+  height: 0.1111em;
+  margin: 0.1111em 0;
+  background-color: #eee;
 }
 
 .group {
