@@ -1,12 +1,12 @@
 const topBarBurger = document.querySelector(".top-bar__burger");
-const topBarNav = document.querySelector(".top-bar__nav");
-const topBarNavOpenClassName = "top-bar__nav--open";
+const topBar = document.querySelector(".top-bar");
+const topBarOpenClassName = "top-bar--open";
 let navVisible = false;
 topBarBurger.onclick = () => {
   if (navVisible) {
-    topBarNav.classList.remove(topBarNavOpenClassName);
+    topBar.classList.remove(topBarOpenClassName);
   } else {
-    topBarNav.classList.add(topBarNavOpenClassName);
+    topBar.classList.add(topBarOpenClassName);
   }
   navVisible = !navVisible;
 }
