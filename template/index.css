@@ -98,4 +98,33 @@ section {
   vertical-align: middle;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-areas:
+    "logo title"
+    "logo contact";
+  background-color: var(--red);
+  color: var(--white);
+  width: 100%;
+  min-height: 5rem;
+  padding: 0 var(--gutter);
+}
+
+.footer__logo {
+  grid-area: logo;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer__title {
+  grid-area: title;
+  align-self: center;
+}
+
+.footer__contact {
+  grid-area: contact;
+}
+
 /* ご自分で何か入れてみて */
