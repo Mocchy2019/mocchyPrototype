@@ -101,24 +101,24 @@ section {
   grid-gap: 0.5rem;
   grid-template-columns: 5rem 1fr 8rem;
   grid-template-areas:
-    "icon name view"
-    "icon desc desc"
-    "icon loc loc";
+    "logo name view"
+    "logo desc desc"
+    "logo loc loc";
 }
 
 @media screen and (max-width: 600px) {
   .group {
     grid-template-columns: 4rem 1fr;
     grid-template-areas:
-      "icon name"
-      "icon view"
+      "logo name"
+      "logo view"
       "desc desc"
       "loc loc";
   }
 }
 
-.group__icon {
-  grid-area: icon;
+.group__logo {
+  grid-area: logo;
   align-self: center;
   justify-self: center;
   max-width: 100%;
@@ -165,13 +165,13 @@ section {
   grid-template-columns: 3rem 1fr;
   grid-gap: 0.5rem;
   grid-template-areas:
-    "icon title"
+    "logo title"
     "quote quote";
   margin: 0.5rem 0;
 }
 
-.voice__icon {
-  grid-area: icon;
+.voice__logo {
+  grid-area: logo;
   align-self: center;
   justify-self: center;
   max-width: 100%;
