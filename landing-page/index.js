@@ -18,3 +18,15 @@ topBarBurger.onclick = toggle;
 for (const x of Array.from(topBarAs)) {
   x.onclick = toggle;
 }
+
+
+window.addEventListener("DOMContentLoaded", function(e) {
+
+  var openVisual = document.getElementsByClassName("open-visual");
+  var fadeComplete = function(e) { openVisual.appendChild(arr[0]); };
+  var arr = openVisual.getElementsByTagName("img");
+  for(var i=0; i < arr.length; i++) {
+    arr[i].addEventListener("animationend", fadeComplete, false);
+  }
+
+}, false);
