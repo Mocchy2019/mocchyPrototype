@@ -259,38 +259,38 @@ section {
     display: grid;
     grid-template-columns: 80px auto auto;
     grid-template-areas:
-      "m-icon m-motif ."
-      "m-icon m-name m-enter"
-      "m-icon m-tag ."
-      "m-img m-img m-img";
+      "s-icon s-motif ."
+      "s-icon s-name s-enter"
+      "s-icon s-tag ."
+      "s-img s-img s-img";
     align-items: center;
     width: 90vw;
     margin: 0 0 50px 0;
   }
 
   .magazine__icon {
-    grid-area: m-icon;
+    grid-area: s-icon;
     width: 60px;
     border-radius: 6px;
     box-shadow: 3px 5px 10px var(--lightshadow);
   }
 
   .magazine__motif {
-    grid-area: m-motif;
+    grid-area: s-motif;
     font-size: 12px;
     margin: 0;
     padding: 0;
   }
 
   .magazine__card h5 {
-    grid-area: m-name;
+    grid-area: s-name;
     font-size: 25px;
     margin: 0;
     padding: 0;
   }
 
   .magazine__enter {
-    grid-area: m-enter;
+    grid-area: s-enter;
     margin: 0;
     padding: 0;
   }
@@ -308,20 +308,21 @@ section {
   }
 
   .magazine__tag {
-    grid-area: m-tag;
+    grid-area: s-tag;
     font-size: 10px;
     margin: 0;
     padding: 0;
   }
 
   .magazine__img {
-    grid-area: m-img;
+    grid-area: s-img;
     object-fit: cover;
     object-position: 50%;
     width: 300px;
-    height: 425px;
+    height: 200px;
     margin: 3vh 2vw;
     justify-self: center;
+    border-radius: 6px;
     box-shadow: 3px 5px 10px var(--lightshadow);
   }
 
