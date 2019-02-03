@@ -27,7 +27,7 @@ html {
 a,
 a:visited {
   color: inherit;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 
 body {

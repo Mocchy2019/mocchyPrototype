@@ -53,7 +53,7 @@ img {
   grid-area: enter;
   color: var(--white);
   font-size: 4vw;
-  text-decoration-line: none;
+  text-decoration: none;
   background: var(--orangered);
   width: 50vw;
   height: 5vh;
