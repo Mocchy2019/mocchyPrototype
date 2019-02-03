@@ -179,7 +179,7 @@
   .dropdown__button {
     background-color: var(--orangered);
     color: white;
-    padding: 16px;
+    padding: 5px;
     font-size: 16px;
     border-radius: 5px;
   }
