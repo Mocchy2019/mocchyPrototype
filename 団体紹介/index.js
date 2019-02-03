@@ -12,4 +12,4 @@ topBarBurger.onclick = () => {
     topBar.classList.add(topBarOpen);
   }
   topBarVisible = !topBarVisible;
-}
+};

@@ -1,5 +1,3 @@
-
-
 const topBarBurger = document.querySelector(".top-bar__burger");
 const topBar = document.querySelector(".top-bar");
 const topBarOpen = "top-bar--open";
@@ -14,4 +12,4 @@ topBarBurger.onclick = () => {
     topBar.classList.add(topBarOpen);
   }
   topBarVisible = !topBarVisible;
-}
+};

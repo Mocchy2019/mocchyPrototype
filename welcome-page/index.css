@@ -1,125 +1,122 @@
-html{
-    --red: #E51D28;
-    --orangered: #F16969;
-    --green: #3c3;
-    --white: #eee;
-    font-family: 'Trebuchet MS';
-    color: var(--white);
-    width: 100%;
+html {
+  --red: #e51d28;
+  --orangered: #f16969;
+  --green: #3c3;
+  --white: #eee;
+  font-family: "Trebuchet MS";
+  color: var(--white);
+  width: 100%;
 }
 
-body{
-    background-color: var(--red);
-    margin: 0;
-    padding: 0;
+body {
+  background-color: var(--red);
+  margin: 0;
+  padding: 0;
 }
 
 /* タブレット */
-.content{
-/* gridの定義*/
-display: grid;
-grid-template-rows: auto 1fr auto;
-grid-template-columns: 1fr auto 1fr;
-grid-template-areas:
-"img img img"
-". title ."
-". enter .";
-grid-gap: 1vh;
-overflow: hidden;
-width: 100%;
-/* gridの位置の定義*/
-position: fixed;
-top: 10vh;
+.content {
+  /* gridの定義*/
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+    "img img img"
+    ". title ."
+    ". enter .";
+  grid-gap: 1vh;
+  overflow: hidden;
+  width: 100%;
+  /* gridの位置の定義*/
+  position: fixed;
+  top: 10vh;
 }
 
 /* 以下、コンテンツの中身の定義*/
-img{
-    grid-area: img;
-    width: 100%;
+img {
+  grid-area: img;
+  width: 100%;
 }
-
 
 .title,
-.enter{
-    text-align: center;
+.enter {
+  text-align: center;
 }
 
-.title{
-    grid-area: title;
-    margin: 0 0 4vh;
-    font-size: 10vw;
+.title {
+  grid-area: title;
+  margin: 0 0 4vh;
+  font-size: 10vw;
 }
 
-.enter{
-    grid-area: enter;
-    color: var(--white);
-    font-size: 4vw;
-    text-decoration-line: none;
-    background: var(--orangered);
-    width: 50vw;
-    height: 5vh;
-    border-radius: 1rem;
-    line-height: 5vh;
+.enter {
+  grid-area: enter;
+  color: var(--white);
+  font-size: 4vw;
+  text-decoration-line: none;
+  background: var(--orangered);
+  width: 50vw;
+  height: 5vh;
+  border-radius: 1rem;
+  line-height: 5vh;
 }
 
-.enter:hover{
-    background-color: var(--green);
-    transition: 0.5s;
+.enter:hover {
+  background-color: var(--green);
+  transition: 0.5s;
 }
-
 
 /* スマホ */
 @media screen and (max-width: 600px) {
-    .content{
-        grid-gap: 3vh;
-        top: 20vh;
-    }
+  .content {
+    grid-gap: 3vh;
+    top: 20vh;
+  }
 
-    .title{
-        margin: 0 0 8vh;
-        font-size: 15vw;
-    }
+  .title {
+    margin: 0 0 8vh;
+    font-size: 15vw;
+  }
 
-    .enter{
-        font-size: 8vw;
-        background: var(--orangered);
-        width: 75vw;
-        height: 7vh;
-        border-radius: 1rem;
-        line-height: 7vh;
-    }
+  .enter {
+    font-size: 8vw;
+    background: var(--orangered);
+    width: 75vw;
+    height: 7vh;
+    border-radius: 1rem;
+    line-height: 7vh;
+  }
 }
 
 /* パソコン */
 @media screen and (min-width: 1300px) {
-    .content{
-        /* gridの定義*/
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "img title"
-        "img enter";
-        overflow: hidden;
-        /* gridの位置の定義*/
-        position: fixed;
-        justify-items: center;
-        align-items: center;
-        top: 20vh;
-    }
-    
-    .title{
-        margin: 0 0 8vh;
-        font-size: 12vw;
-    }
-    
-    .enter{
-        font-size: 3vw;
-        background: var(--orangered);
-        width: 30vw;
-        height: 7vh;
-        border-radius: 1rem;
-        line-height: 7vh;
-    }
-}
+  .content {
+    /* gridの定義*/
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img title"
+      "img enter";
+    overflow: hidden;
+    /* gridの位置の定義*/
+    position: fixed;
+    justify-items: center;
+    align-items: center;
+    top: 20vh;
+  }
 
+  .title {
+    margin: 0 0 8vh;
+    font-size: 12vw;
+  }
+
+  .enter {
+    font-size: 3vw;
+    background: var(--orangered);
+    width: 30vw;
+    height: 7vh;
+    border-radius: 1rem;
+    line-height: 7vh;
+  }
+}
