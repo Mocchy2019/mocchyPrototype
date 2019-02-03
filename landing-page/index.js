@@ -30,4 +30,3 @@ setInterval(() => {
   }
   container.children[i].classList.add(shown);
 }, 3000);
-container.children[0].classList.add(shown);
