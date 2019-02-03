@@ -1,177 +1,159 @@
 * {
-    box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
+
+html {
+  --red: #e51d28;
+  --orangered: #f16969;
+  --green: #3c3;
+  --gray: rgba(139, 139, 139, 0.644);
+  --lightshadow: rgb(230, 229, 229);
+  --white: #fff;
+  --top-bar-height: 2.5rem;
+  --total-max-width: 1300px;
+  --tag-space: 20px;
+  --gutter: 1rem;
+  color: #333;
+  font-family: "Trebuchet MS";
+  line-height: 1.3;
+  scroll-behavior: smooth;
+}
+
+/* should only be used on html */
+.no-scroll {
+  position: fixed;
+  width: 100%;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  max-width: var(--total-max-width);
+}
+
+main {
+  padding: var(--top-bar-height) var(--gutter) 0;
+  min-height: 100vh;
+}
+
+section {
+  margin: var(--gutter) 0;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: var(--top-bar-height) 1fr;
+  grid-template-areas:
+    "search title burger"
+    "nav nav nav";
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: var(--total-max-width);
+  height: var(--top-bar-height);
+  overflow-y: hidden;
+  transition: height 0.2s;
+  z-index: 1;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.top-bar--open {
+  height: 100%;
+}
+
+.top-bar__search {
+  grid-area: search;
+  height: var(--top-bar-height);
+}
+
+.top-bar__title {
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.top-bar__title * {
+  vertical-align: middle;
+}
+
+.top-bar__burger {
+  grid-area: burger;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.top-bar__burger > * {
+  width: 1em;
+  height: 0.15em;
+  margin: 0.15em 0;
+  background-color: var(--white);
+  border-radius: 20%;
+}
+
+.top-bar__nav {
+  grid-area: nav;
+  text-align: center;
+  background-color: var(--orangered);
+}
+
+.top-bar__nav > * {
+  height: var(--top-bar-height);
+  padding: 7vh;
+}
+
+.top-bar__nav a {
+  vertical-align: middle;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-areas:
+    "logo title"
+    "logo contact";
+  background-color: var(--red);
+  color: var(--white);
+  width: 100%;
+  min-height: 5rem;
+  padding: 0 var(--gutter);
+}
+
+.footer__logo {
+  grid-area: logo;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer__title {
+  grid-area: title;
+  align-self: center;
+}
+
+.footer__contact {
+  grid-area: contact;
+}
+
+/* タブレット */
+@media screen and (min-width: 700px) {
   html {
-    --red: #E51D28;
-    --orangered: #F16969;
-    --green: #3c3;
-    --gray: rgba(139, 139, 139, 0.644);
-    --lightshadow: rgb(230, 229, 229);
-    --white: #fff;
-    --top-bar-height: 2.5rem;
-    --total-max-width: 1300px;
-    --tag-space: 20px;
-    --gutter: 1rem;
-    color: #333;
-    font-family: 'Trebuchet MS';
-    line-height: 1.3;
+    --top-bar-height: 3rem;
   }
-  
-  /* should only be used on html */
-  .no-scroll {
-    position: fixed;
-    width: 100%;
-  }
-  
-  a,
-  a:visited {
-    color: inherit;
-    text-decoration-line: none;
-  }
-  
-  body {
-    margin: 0 auto;
-    max-width: var(--total-max-width);
-  }
-  
-  main {
-    padding: var(--top-bar-height) var(--gutter) 0;
-    min-height: 100vh;
-  }
-  
-  section {
-    margin: var(--gutter) 0;
-  }
-  
+}
 
-  /* スマホ */
-  .top-bar {
-    display: grid;
-    grid-template-columns: 3rem 1fr 1.5fr 3rem;
-    grid-template-rows: var(--top-bar-height) 1fr;
-    grid-template-areas:
-      "search logo title burger"
-      "nav nav nav nav";
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: var(--total-max-width);
-    height: var(--top-bar-height);
-    overflow-y: hidden;
-    transition: height 0.2s;
-    z-index: 1;
-    background-color: var(--red);
-    color: var(--white);
-    font-size: 1.5rem;
-  }
-  
-  .top-bar--open {
-    height: 100%;
-  }
+/* 以上、ページ全体とヘッダー・フッターのスタイリング */
 
-  .top-bar__search{
-    grid-area: search;
-    height: var(--top-bar-height)
-  }
-
-  .top-bar__logo{
-    grid-area: logo;
-    height: var(--top-bar-height);
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .top-bar__logo img{
-    height: var(--top-bar-height);
-  }
-  
-  .top-bar__title {
-    grid-area: title;
-    text-align: start;
-    align-self: center;
-    font-weight: bold;
-  }
-  
-  .top-bar__burger {
-    grid-area: burger;
-    align-self: center;
-    justify-self: center;
-    cursor: pointer;
-  }
-  
-  .top-bar__burger > * {
-    width: 1em;
-    height: 0.15em;
-    margin: 0.15em 0;
-    background-color: var(--white);
-    border-radius: 20%;
-  }
-  
-  .top-bar__nav {
-    grid-area: nav;
-    text-align: center;
-    background-color: var(--orangered);
-  }
-  
-  .top-bar__nav > * {
-      height: var(--top-bar-height);
-      padding: 7vh;
-  }
-  
-  .top-bar__nav a {
-    vertical-align: middle;
-  }
-  
-  .footer {
-    display: grid;
-    grid-template-columns: 4rem 1fr;
-    grid-template-areas:
-      "logo title"
-      "logo contact";
-    background-color: var(--red);
-    color: var(--white);
-    width: 100%;
-    min-height: 5rem;
-    padding: 0 var(--gutter);
-  }
-  
-  .footer__logo {
-    grid-area: logo;
-    border-radius: 50%;
-    align-self: center;
-    justify-self: center;
-  }
-  
-  .footer__title {
-    grid-area: title;
-    align-self: center;
-  }
-  
-  .footer__contact {
-    grid-area: contact;
-  }
-
-   /* タブレット */
-   @media screen and (min-width: 700px){
-    html{
-      --top-bar-height: 3rem; 
-    }
-
-    .top-bar {
-      grid-template-columns: 3rem 1fr 1.2fr 3rem;
-      height: var(--top-bar-height);
-      font-size: 2rem;
-    }
-
-
-
-   }
-
-
-  /* 以上、ページ全体とヘッダー・フッターのスタイリング */
-
-  .open-visual{
+.open-visual {
   display: block;
   position: relative;
   top: var(--top-bar-height);
@@ -180,7 +162,7 @@
   max-width: var(--total-max-width);
 }
 
-.open-visual img{
+.open-visual img {
   object-fit: cover;
   object-position: 40% 0%;
   overflow: hidden;
@@ -188,16 +170,16 @@
   height: 80vh;
 }
 
-.open-visual h2{
+.open-visual h2 {
   position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;
   color: var(--white);
-  text-shadow: 1px 2px 2px #333 ;
+  text-shadow: 1px 2px 2px #333;
 }
 
-main h3{
+main h3 {
   display: inline-block;
   border-bottom: 0.5px solid var(--gray);
   width: 70vw;
@@ -205,14 +187,14 @@ main h3{
   padding: 0;
 }
 
-.see-more{
+.see-more {
   display: inline;
   float: right;
   font-size: 0.7em;
   padding: 0.7em;
 }
 
-.see-genre{
+.see-genre {
   display: block;
   background: var(--orangered);
   width: 280px;
@@ -229,7 +211,7 @@ main h3{
 }
 
 /* スマホ */
-.featured-org__all{
+.featured-org__all {
   display: grid;
   grid-auto-rows: 375px;
   grid-auto-columns: 300px;
@@ -239,32 +221,33 @@ main h3{
   margin-bottom: 50px;
 }
 
-.featured-org__card{
+.featured-org__card {
   box-shadow: 3px 5px 10px var(--lightshadow);
   border-radius: 10px;
 }
 
-.featured-org__link{
+.featured-org__link {
   display: block;
   height: 88%;
 }
 
-.featured-org__link p, .featured-org__link h4{
+.featured-org__link p,
+.featured-org__link h4 {
   margin: 0;
   padding: 0;
   margin-left: 15px;
 }
 
-.featured-org__link p{
+.featured-org__link p {
   font-size: 1.3rem;
   color: var(--gray);
 }
 
-.featured-org__link h4{
+.featured-org__link h4 {
   font-size: 2.2rem;
 }
 
-.featured-org__card img{
+.featured-org__card img {
   object-fit: cover;
   object-position: 100% 100%;
   width: 100%;
@@ -272,8 +255,8 @@ main h3{
   border-radius: 10px 10px 0 0;
 }
 
-.featured-org___tag{
-  height: var( --tag-space);
+.featured-org___tag {
+  height: var(--tag-space);
   margin: 5px;
   margin-left: 15px;
   padding: 0px;
@@ -281,11 +264,11 @@ main h3{
   color: var(--gray);
 }
 
-.featured-org___tag span{
+.featured-org___tag span {
   background-color: whitesmoke;
 }
 
-.student-org{
+.student-org {
   display: grid;
   grid-gap: 1em 2em;
   grid-template-rows: 1fr 1fr 1fr;
@@ -296,47 +279,47 @@ main h3{
   margin: 0 0 10px;
 }
 
-.student-org__card{
+.student-org__card {
   display: grid;
   grid-template-columns: 80px auto auto;
   grid-template-areas:
-  "s-icon s-motif ."
-  "s-icon s-name s-enter"
-  "s-icon s-tag .";
+    "s-icon s-motif ."
+    "s-icon s-name s-enter"
+    "s-icon s-tag .";
   align-items: center;
   width: 280px;
   padding-bottom: 6px;
   border-bottom: 0.5px solid var(--gray);
 }
 
-.student-org__icon{
+.student-org__icon {
   grid-area: s-icon;
   width: 60px;
   border-radius: 6px;
   box-shadow: 3px 5px 10px var(--lightshadow);
 }
 
-.student-org__motif{
+.student-org__motif {
   grid-area: s-motif;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
-.student-org__card h5{
+.student-org__card h5 {
   grid-area: s-name;
   font-size: 25px;
   margin: 0;
   padding: 0;
 }
 
-.student-org__enter{
+.student-org__enter {
   grid-area: s-enter;
   margin: 0;
   padding: 0;
 }
 
-.student-org__enter a{
+.student-org__enter a {
   font-size: 12px;
   color: var(--white);
   text-align: center;
@@ -348,15 +331,14 @@ main h3{
   float: right;
 }
 
-.student-org__tag{
+.student-org__tag {
   grid-area: s-tag;
   font-size: 10px;
   margin: 0;
   padding: 0;
 }
 
-
-.event{
+.event {
   display: flex;
   overflow-x: auto;
   justify-content: start;
@@ -367,13 +349,13 @@ main h3{
   border-bottom: 0.5px solid var(--gray);
 }
 
-.event__card{
+.event__card {
   width: 350px;
   height: 300px;
   margin-right: 20px;
 }
 
-.event__img{
+.event__img {
   object-fit: cover;
   object-position: 80%;
   width: 350px;
@@ -382,25 +364,24 @@ main h3{
   box-shadow: 3px 5px 10px var(--lightshadow);
 }
 
-.event__desc{
+.event__desc {
   height: 25px;
   margin: 0;
   font-size: 12px;
   line-height: 30px;
 }
 
-
-.event__name{
+.event__name {
   height: 40px;
   margin: 0;
   font-size: 35px;
 }
 
-.magazine{
+.magazine {
   max-width: var(--total-max-width);
 }
 
-.magazine__card img{
+.magazine__card img {
   max-width: var(--total-max-width);
   object-fit: cover;
   object-position: 100% 100%;
@@ -408,29 +389,26 @@ main h3{
   margin: 0 0 30px;
 }
 
-
-
-
 /* タブレット */
-@media screen and (min-width: 700px){
-  .open-visual img{
+@media screen and (min-width: 700px) {
+  .open-visual img {
     object-fit: cover;
     object-position: 0% 0%;
     overflow: hidden;
     width: 100vw;
     height: 50vh;
-}
+  }
 
-.open-visual h2{
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  text-shadow: 1px 2px 2px #333 ;
-}
-  
-  .featured-org__all{
+  .open-visual h2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 1px 2px 2px #333;
+  }
+
+  .featured-org__all {
     display: grid;
     grid-template-rows: 25rem 25rem;
     grid-template-columns: 20rem 20rem;
@@ -438,26 +416,26 @@ main h3{
     margin-bottom: 70px;
   }
 
-  .open-visual h2{
+  .open-visual h2 {
     position: absolute;
     top: 25%;
     width: 100%;
     font-size: 6vw;
     text-align: center;
     color: var(--white);
-    text-shadow: 1px 2px 2px #333 ;
+    text-shadow: 1px 2px 2px #333;
   }
 
-  .student-org__card{
+  .student-org__card {
     width: 345px;
     grid-template-columns: 90px auto 40%;
   }
 
-  .student-org__icon{
+  .student-org__icon {
     width: 80px;
   }
 
-  .magazine__card img{
+  .magazine__card img {
     max-width: var(--total-max-width);
     object-fit: cover;
     object-position: 100% 100%;

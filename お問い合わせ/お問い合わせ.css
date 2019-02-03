@@ -1,77 +1,78 @@
 .cu {
-	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-rows: 3rem 2.8rem 4rem 2.8rem 4rem 2.8rem 4rem 2.8rem 10rem 2.8rem;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 
-	  "title ."
-	  "name ."
-	  "name2 name2"
-	  "mycode ."
-	  "mycode2 mycode2"
-	  "e-mail ."
-	  "e-mail2 e-mail2"
-	  "qeustion ."
-	  "qeustion2 qeustion2"
-	  ". sent"
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-rows: 3rem 2.8rem 4rem 2.8rem 4rem 2.8rem 4rem 2.8rem 10rem 2.8rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title ."
+    "name ."
+    "name2 name2"
+    "mycode ."
+    "mycode2 mycode2"
+    "e-mail ."
+    "e-mail2 e-mail2"
+    "qeustion ."
+    "qeustion2 qeustion2"
+    ". sent";
 }
 
 .cu__title {
-	grid-area: title;
-	margin: 0 auto;
+  grid-area: title;
+  margin: 0 auto;
 }
 
 .cu__name {
-	grid-area: name;
-	margin: 0 auto; 
+  grid-area: name;
+  margin: 0 auto;
 }
-.cu__name2{
-	grid-area: name2;
-	margin: 0 auto;
+.cu__name2 {
+  grid-area: name2;
+  margin: 0 auto;
 }
 
 .cu__mycode {
-	grid-area: mycode;
-	margin: 0 auto;
+  grid-area: mycode;
+  margin: 0 auto;
 }
 .cu__mycode2 {
-	grid-area: mycode2;
-	margin: 0 auto;
+  grid-area: mycode2;
+  margin: 0 auto;
 }
 
 .cu__e-mail {
-	grid-area: e-mail;
-	margin: 0 auto;
+  grid-area: e-mail;
+  margin: 0 auto;
 }
 .cu__e-mail2 {
-	grid-area: e-mail2;
-	margin: 0 auto;
+  grid-area: e-mail2;
+  margin: 0 auto;
 }
 
 .cu__qeustion {
-	grid-area: qeustion;
-	margin: 0 auto;
+  grid-area: qeustion;
+  margin: 0 auto;
 }
 .cu__qeustion2 {
-	grid-area: qeustion2;
-	margin: 0 auto;
+  grid-area: qeustion2;
+  margin: 0 auto;
 }
 
 .cu__sent {
-	grid-area: sent;
-	background-color: var(--green);
-	color: var(--white);
-	align-self: center;
-	justify-self: right;
-	max-width: 100%;
-	padding: 0.3rem 2rem;
-	border-radius: 3rem;
+  grid-area: sent;
+  background-color: var(--green);
+  color: var(--white);
+  align-self: center;
+  justify-self: right;
+  max-width: 100%;
+  padding: 0.3rem 2rem;
+  border-radius: 3rem;
 }
 
-.input, textarea {
-	font: 1.2em sans-serif;
-	width: 300px;
-	height: 0 auto;
-	border: 2px solid #d32;
-	border-radius: 2px;
+.input,
+textarea {
+  font: 1.2em sans-serif;
+  width: 300px;
+  height: 0 auto;
+  border: 2px solid #d32;
+  border-radius: 2px;
 }
