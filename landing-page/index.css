@@ -154,29 +154,24 @@ section {
 /* 以上、ページ全体とヘッダー・フッターのスタイリング */
 
 .open-visual {
-  display: block;
   position: relative;
-  top: var(--top-bar-height);
-  margin: 0 0 40px;
-  padding: 0;
-  max-width: var(--total-max-width);
-}
-
-.open-visual img {
-  object-fit: cover;
-  object-position: 40% 0%;
+  height: 300px;
   overflow: hidden;
-  width: 100vw;
-  height: 80vh;
 }
 
-.open-visual h2 {
+.open-visual__image {
   position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  text-shadow: 1px 2px 2px #333;
+  /* top: 0; */
+  object-fit: cover;
+  /* object-position: 40% 0%; */
+  /* width: 100vw; */
+  /* height: 80vh; */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.open-visual__image--shown {
+  opacity: 1;
 }
 
 main h3 {
