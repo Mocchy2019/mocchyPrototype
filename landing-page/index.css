@@ -16,6 +16,7 @@ html {
   color: #333;
   font-family: "Trebuchet MS";
   line-height: 1.3;
+  scroll-behavior: smooth;
 }
 
 /* should only be used on html */
