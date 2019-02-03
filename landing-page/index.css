@@ -173,17 +173,6 @@ section {
   height: 80vh;
 }
 
-.open-visual h2 {
-  display: block;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  text-shadow: 1px 2px 2px #333;
-  z-index: 30;
-}
-
 .open-visual img:nth-of-type(1) {
   animation-name: fader;
   animation-delay: 4s;
@@ -201,6 +190,18 @@ section {
 @keyframes fader {
   from { opacity: 1.0; }
   to   { opacity: 0.0; }
+}
+
+
+.open-visual h2 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 1px 2px 2px #333;
+  z-index: 30;
 }
 
 main h3 {
