@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --red: #c33;
+  --green: #3c3;
+  --white: #eee;
+  --top-bar-height: 3rem;
+  --total-max-width: 50rem;
+  --gutter: 0.5rem;
+  color: #333;
+  font-family: Verdana, sans-serif;
+  line-height: 1.3;
+}
+
+/* should only be used on html */
+.no-scroll {
+  position: fixed;
+  width: 100%;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: var(--total-max-width);
+}
+
+main {
+  padding: var(--top-bar-height) var(--gutter) 0;
+  min-height: 100vh;
+}
+
+section {
+  margin: var(--gutter) 0;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: var(--top-bar-height) 1fr;
+  grid-template-areas:
+    ". title burger"
+    "nav nav nav";
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: var(--total-max-width);
+  height: var(--top-bar-height);
+  overflow-y: hidden;
+  transition: height 0.2s;
+  z-index: 1;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.top-bar--open {
+  height: 100%;
+}
+
+.top-bar__title {
+  grid-area: title;
+  text-align: center;
+  align-self: center;
+}
+
+.top-bar__burger {
+  grid-area: burger;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+
+/* there should be only three things in the burger */
+.top-bar__burger > * {
+  width: 1em;
+  height: 0.15em;
+  margin: 0.15em 0;
+  background-color: var(--white);
+}
+
+.top-bar__nav {
+  grid-area: nav;
+  text-align: center;
+}
+
+.top-bar__nav > * {
+  height: var(--top-bar-height);
+}
+
+/* probably every grandchild of .top-bar__nav will be an a */
+.top-bar__nav a {
+  vertical-align: middle;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-areas:
+    "logo title"
+    "logo contact";
+  background-color: var(--red);
+  color: var(--white);
+  width: 100%;
+  min-height: 5rem;
+  padding: 0 var(--gutter);
+}
+
+.footer__logo {
+  grid-area: logo;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer__title {
+  grid-area: title;
+  align-self: center;
+}
+
+.footer__contact {
+  grid-area: contact;
+}
+
+/* ご自分で何か入れてみて */
+.genre {
+  display: grid;
+  grid-template-rows: 5rem 8rem 2rem 8rem 2rem 8rem 2rem;
+  grid-template-columns: 4fr 4fr;
+  grid-template-areas:
+    "title title"
+    "tai bun"
+    "set1 set2"
+    "kai kei"
+    "set3 set4"
+    "bor tea"
+    "set5 set6";
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+h1 {
+  grid-area: title;
+  }
+h5 {
+  color: #123;
+  margin: 1px 1rem auto;
+  text-align: left;
+}
+ 
+.club__athlete {
+  grid-area: tai;
+  color: #fff;
+  background-image: url(https://openclipart.org/image/700px/svg_to_png/233331/strongman.png);
+  background-size: cover;
+  border-style: solid;
+  border-radius: 0.8rem;
+  margin: 4px;
+}
+
+.club__culture {
+  grid-area: bun;
+  color: #fff;
+  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/y/yuhei2261/20170101/20170101112307.jpg);
+  background-size: cover;
+  border-style: solid;
+  border-radius: 0.8rem;
+  margin: 4px;
+}
+
+.circle__athlete {
+  grid-area: kai;
+  color: #fff;
+  background-image: url(https://via.placeholder.com/700.png?text=M);
+  border-style: solid;
+  border-radius: 0.8em;
+  margin: 4px;
+}
+
+.circle__culture {
+  grid-area: kei;
+  color: #fff;
+  background-image: url(https://via.placeholder.com/700.png?text=M);
+  border-style: solid;
+  border-radius: 0.8rem;
+  margin: 4px;
+}
+
+.volunteer__in {
+  grid-area: bor;
+  color: #fff;
+  background-image: url(https://via.placeholder.com/700.png?text=M);
+  border-style: solid;
+  border-radius: 0.8rem;
+  margin: 4px;
+}
+
+.volunteer__out {
+  grid-area: tea;
+  color: #fff;
+  background-image: url(https://via.placeholder.com/700.png?text=M);
+  border-style: solid;
+  border-radius: 0.8rem;
+  margin: 4px;
+}
