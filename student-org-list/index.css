@@ -251,11 +251,11 @@ section {
   }
 
   /* スマホ */
-  .magazine {
+  .student-org {
     margin: 10px 0 10px 0;
   }
 
-  .magazine__card {
+  .student-org__card {
     display: grid;
     grid-template-columns: 80px auto auto;
     grid-template-areas:
@@ -268,34 +268,34 @@ section {
     margin: 0 0 50px 0;
   }
 
-  .magazine__icon {
+  .student-org__icon {
     grid-area: s-icon;
     width: 60px;
     border-radius: 6px;
     box-shadow: 3px 5px 10px var(--lightshadow);
   }
 
-  .magazine__motif {
+  .student-org__motif {
     grid-area: s-motif;
     font-size: 12px;
     margin: 0;
     padding: 0;
   }
 
-  .magazine__card h5 {
+  .student-org__card h5 {
     grid-area: s-name;
     font-size: 25px;
     margin: 0;
     padding: 0;
   }
 
-  .magazine__enter {
+  .student-org__enter {
     grid-area: s-enter;
     margin: 0;
     padding: 0;
   }
 
-  .magazine__enter a {
+  .student-org__enter a {
     font-size: 12px;
     color: var(--white);
     text-align: center;
@@ -307,14 +307,14 @@ section {
     float: right;
   }
 
-  .magazine__tag {
+  .student-org__tag {
     grid-area: s-tag;
     font-size: 10px;
     margin: 0;
     padding: 0;
   }
 
-  .magazine__img {
+  .student-org__img {
     grid-area: s-img;
     object-fit: cover;
     object-position: 50%;
@@ -328,21 +328,21 @@ section {
 
   /* タブレット */
   @media screen and (min-width: 700px) {
-    .magazine__card {
+    .student-org__card {
       width: 345px;
       grid-template-columns: 90px auto 40%;
     }
 
-    .magazine__icon {
+    .student-org__icon {
       width: 80px;
     }
 
-    .magazine__img {
+    .student-org__img {
       width: 70vw;
       height: 30vh;
     }
 
-    .magazine__card img {
+    .student-org__card img {
       max-width: var(--total-max-width);
       object-fit: cover;
       object-position: 100% 100%;
