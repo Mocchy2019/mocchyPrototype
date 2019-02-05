@@ -14,10 +14,10 @@ html {
   --tag-space: 20px;
   --gutter: 1rem;
   color: #333;
-  font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS", sans-serif;
   line-height: 1.3;
   scroll-behavior: smooth;
-}
+} 
 
 /* should only be used on html */
 .no-scroll {
