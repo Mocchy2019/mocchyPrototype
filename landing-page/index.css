@@ -59,7 +59,7 @@ section {
   height: var(--top-bar-height);
   overflow-y: hidden;
   transition: height 0.2s;
-  z-index: 30;
+  z-index: 1;
   background-color: var(--red);
   color: var(--white);
   font-size: 1.5rem;
@@ -154,54 +154,24 @@ section {
 /* 以上、ページ全体とヘッダー・フッターのスタイリング */
 
 .open-visual {
-  display: block;
-  top: var(--top-bar-height);
-  margin: var(--top-bar-height) 0 40px;
-  padding: 0;
-  width: 100vw;
-  height: 80vh;
-  max-width: var(--total-max-width);
-}
-
-.open-visual img {
-  display: block;
-  position: absolute;
-  object-fit: cover;
-  object-position: 40% 0%;
+  position: relative;
+  height: 300px;
   overflow: hidden;
-  width: 100vw;
-  height: 80vh;
 }
 
-.open-visual img:nth-of-type(1) {
-  animation-name: fader;
-  animation-delay: 4s;
-  animation-duration: 1s;
-  z-index: 20;
-}
-
-.open-visual img:nth-of-type(2) {
-  z-index: 10;
-}
-.open-visual img:nth-of-type(n+3) {
-  display: none;
-}
-
-@keyframes fader {
-  from { opacity: 1.0; }
-  to   { opacity: 0.0; }
-}
-
-
-.open-visual h2 {
-  display: block;
+.open-visual__image {
   position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  text-shadow: 1px 2px 2px #333;
-  z-index: 30;
+  /* top: 0; */
+  object-fit: cover;
+  /* object-position: 40% 0%; */
+  /* width: 100vw; */
+  /* height: 80vh; */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.open-visual__image--shown {
+  opacity: 1;
 }
 
 main h3 {
