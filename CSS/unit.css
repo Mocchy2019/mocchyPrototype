@@ -24,6 +24,8 @@
     "gi-icon gi-title gi-enter"
     "gi-icon gi-tag gi-tag";
     align-items: center;
+    margin: 20px auto;
+    max-width: 350px;
 }
         .general-info > *, a{
             display: inline-block;
@@ -44,6 +46,7 @@
         .general-info__enter{
             grid-area: gi-enter;
             justify-self: right;
+            font-size: 4vw;
             background-color: orangered;
             border-radius: 20px;
         }
@@ -59,7 +62,7 @@
     display: block;
     height: 400px;
     width: 300px;
-    margin: 0;
+    margin: 30px auto;
     border-radius: 20px;
     box-shadow: 3px 3px 3px whitesmoke;
 }
@@ -80,7 +83,8 @@
             height: 250px;
             border-radius: 20px 20px 0 0;
         } 
-        .feature-info___tag {
+        .feature-info___tag > a {
+            background-color: gray;
         }
 
 
