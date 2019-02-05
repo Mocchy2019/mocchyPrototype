@@ -1,10 +1,5 @@
 #!/bin/sh
 
 set -eu
-
-if [ "$#" -ne 1 ]; then
-  echo "usage: $0 <dir>"
-  exit 1
-fi
-
-exec ruby -run -e httpd "$1" -p 3000
+cd "$(git rev-parse --show-toplevel)"
+exec ruby -run -e httpd . -p 3000

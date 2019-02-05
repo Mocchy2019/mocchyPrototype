@@ -19,14 +19,14 @@ for (const x of Array.from(topBarAs)) {
   x.onclick = toggle;
 }
 
-
-window.addEventListener("DOMContentLoaded", function(e) {
-
-  var openVisual = document.getElementsByClassName("open-visual");
-  var fadeComplete = function(e) { openVisual.appendChild(arr[0]); };
-  var arr = openVisual.getElementsByTagName("img");
-  for(var i=0; i < arr.length; i++) {
-    arr[i].addEventListener("animationend", fadeComplete, false);
+const container = document.querySelector(".open-visual");
+const shown = "open-visual__image--shown";
+let i = 0;
+setInterval(() => {
+  container.children[i].classList.remove(shown);
+  i++;
+  if (i === container.children.length) {
+    i = 0;
   }
-
-}, false);
+  container.children[i].classList.add(shown);
+}, 3000);
