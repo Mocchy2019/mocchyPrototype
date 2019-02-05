@@ -23,7 +23,7 @@ html {
   /* box-shadowと一緒に使う */
   --box-shadow: 0 0.2rem 0 0.5rem var(--light-gray);
   /* 常に上にあるやつ（top bar）の高さ */
-  --top-bar-height: 2.5rem;
+  --header-height: 2.5rem;
   /* パソコンなどの画面のでかいやつを使うための幅の上限 */
   --max-width: 1300px;
   /* 溝 */
@@ -49,10 +49,10 @@ body {
   max-width: var(--max-width);
 }
 
-.top-bar {
+header {
   display: grid;
   grid-template-columns: 3rem 1fr 3rem;
-  grid-template-rows: var(--top-bar-height) 1fr;
+  grid-template-rows: var(--header-height) 1fr;
   grid-template-areas:
     "search title burger"
     "nav nav nav";
@@ -60,7 +60,7 @@ body {
   top: 0;
   width: 100%;
   max-width: var(--max-width);
-  height: var(--top-bar-height);
+  height: var(--header-height);
   overflow-y: hidden;
   transition: height 0.2s;
   z-index: 1;
@@ -69,34 +69,34 @@ body {
   font-size: 1.5rem;
 }
 
-.top-bar--open {
+.header--open {
   height: 100%;
 }
 
-.top-bar__search {
+.header__search {
   grid-area: search;
-  height: var(--top-bar-height);
+  height: var(--header-height);
 }
 
-.top-bar__title {
+.header__title {
   grid-area: title;
   justify-self: center;
   align-self: center;
   font-weight: bold;
 }
 
-.top-bar__title > * {
+.header__title > * {
   vertical-align: middle;
 }
 
-.top-bar__burger {
+.header__burger {
   grid-area: burger;
   align-self: center;
   justify-self: center;
   cursor: pointer;
 }
 
-.top-bar__burger > * {
+.header__burger > * {
   width: 1em;
   height: 0.15em;
   margin: 0.15em 0;
@@ -104,26 +104,26 @@ body {
   border-radius: 20%;
 }
 
-.top-bar__nav {
+.header__nav {
   grid-area: nav;
   text-align: center;
   background-color: var(--orange-red);
 }
 
-.top-bar__nav > * {
-  height: var(--top-bar-height);
+.header__nav > * {
+  height: var(--header-height);
 }
 
-.top-bar__nav a {
+.header__nav a {
   vertical-align: middle;
 }
 
 main {
-  padding: var(--top-bar-height) var(--gutter) 0;
+  padding: var(--header-height) var(--gutter) 0;
   min-height: 100vh;
 }
 
-.footer {
+footer {
   display: grid;
   grid-template-columns: 4rem 1fr;
   grid-template-areas:
