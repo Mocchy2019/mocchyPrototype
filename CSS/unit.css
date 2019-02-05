@@ -17,11 +17,73 @@
 /* I. スマホ, i. 複数のページで使うunit */
 .general-info{
     display: grid;
-    grid-template-columns: 70px auto auto;
-    grid-auto-rows: 15px 30px 15px;
+    grid-template-columns: 80px auto auto;
+    grid-auto-rows: 20px 40px 20px;
+    grid-template-areas:
+    "gi-icon gi-slogan ."
+    "gi-icon gi-title gi-enter"
+    "gi-icon gi-tag gi-tag";
+    align-items: center;
 }
+        .general-info > *, a{
+            display: inline-block;
+            margin: 0;
+            text-decoration-line: none;
+        }
+        .general-info__icon{
+            grid-area: gi-icon;
+            width: 70px;
+            border-radius: 10px;
+        }
+        .general-info__slogan{
+            grid-area: gi-slogan;
+        }
+        .general-info__title{
+            grid-area: gi-title;
+        }
+        .general-info__enter{
+            grid-area: gi-enter;
+            justify-self: right;
+            background-color: orangered;
+            border-radius: 20px;
+        }
+        .general-info__tag{
+            grid-area: gi-tag;
+        }
+
+
+
 
 /* I. スマホ, ii. ホームページ */
+.feature-info{
+    display: block;
+    height: 400px;
+    width: 300px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px whitesmoke;
+}
+  
+        .feature-info__link{
+            height: 350px;
+        }
+        .feature-info__link > *{
+            margin: 0;
+        }
+        .feature-info__link > p, h2{
+            padding: 5px;
+        }
+        .feature-info img {
+            object-fit: cover;
+            object-position: 50% 50%;
+            width: 100%;
+            height: 250px;
+            border-radius: 20px 20px 0 0;
+        } 
+        .feature-info___tag {
+        }
+
+
 
 
 /* I. スマホ, iii. ジャンル */
