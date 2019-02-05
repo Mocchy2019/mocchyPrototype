@@ -1,13 +1,25 @@
 /* 【重要】unit.cssはMocchyの全てのunitを定義したCSSです
 　  目次
     I. スマホ
+        i. 複数のページで使うunit
+        ii. ホームページ
+        iii...
     II. タブレット
+        i. 複数のページで使うunit
+        ii. ホームページ
+        iii...
     III. パソコン
+        i. 同上
 */
+
 
 /* I. スマホ */
 /* I. スマホ, i. 複数のページで使うunit */
-
+.general-info{
+    display: grid;
+    grid-template-columns: 70px auto auto;
+    grid-auto-rows: 15px 30px 15px;
+}
 
 /* I. スマホ, ii. ホームページ */
 
