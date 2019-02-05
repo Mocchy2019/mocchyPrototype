@@ -59,7 +59,7 @@ section {
   height: var(--top-bar-height);
   overflow-y: hidden;
   transition: height 0.2s;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--red);
   color: var(--white);
   font-size: 1.5rem;
@@ -179,7 +179,7 @@ section {
   position: absolute;
   top: 15rem;
   left: 10vw;
-  z-index: 30;
+  z-index: 5;
   text-align: center;
   color: var(--white);
   font-size: 6vw;
