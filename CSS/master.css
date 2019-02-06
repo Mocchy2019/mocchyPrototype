@@ -42,16 +42,15 @@ html {
   scroll-behavior: smooth;
 }
 
-/* html要素だけに使う */
-html.no-scroll {
-  position: fixed;
-  width: 100%;
-}
-
 body {
   /* 幅の上限を設定する */
   margin: 0 auto;
   max-width: var(--max-width);
+}
+
+/* body要素だけに使う */
+body.no-scroll {
+  overflow: hidden;
 }
 
 header {

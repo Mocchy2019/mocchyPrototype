@@ -5,10 +5,10 @@ const noScroll = "no-scroll";
 let topBarVisible = false;
 topBarBurger.onclick = () => {
   if (topBarVisible) {
-    document.documentElement.classList.remove(noScroll);
+    document.body.classList.remove(noScroll);
     topBar.classList.remove(topBarOpen);
   } else {
-    document.documentElement.classList.add(noScroll);
+    document.body.classList.add(noScroll);
     topBar.classList.add(topBarOpen);
   }
   topBarVisible = !topBarVisible;
