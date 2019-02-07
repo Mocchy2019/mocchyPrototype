@@ -12,135 +12,179 @@
         i. 同上
 */
 
-
 /* I. スマホ */
 /* I. スマホ, i. 複数のページで使うunit */
-.general-info{
-    display: grid;
-    grid-template-columns: 80px auto auto;
-    grid-auto-rows: 20px 40px 20px;
-    grid-template-areas:
+.general-info {
+  display: grid;
+  grid-template-columns: 80px auto auto;
+  grid-auto-rows: 20px 40px 20px;
+  grid-template-areas:
     "gi-icon gi-slogan ."
     "gi-icon gi-title gi-enter"
     "gi-icon gi-tag gi-tag";
-    align-items: center;
-    margin: 20px auto;
-    max-width: 350px;
+  padding: 0 10px;
+  margin: 20px auto;
+  max-width: 380px;
 }
-        .general-info > *, a{
-            display: inline-block;
-            margin: 0;
-            text-decoration-line: none;
-        }
-        .general-info__icon{
-            grid-area: gi-icon;
-            width: 70px;
-            border-radius: 10px;
-        }
-        .general-info__slogan{
-            grid-area: gi-slogan;
-        }
-        .general-info__title{
-            grid-area: gi-title;
-        }
-        .general-info__enter{
-            grid-area: gi-enter;
-            justify-self: right;
-            font-size: 4vw;
-            background-color: orangered;
-            border-radius: 20px;
-        }
-        .general-info__tag{
-            grid-area: gi-tag;
-        }
+.general-info > *,
+a {
+  display: inline-block;
+  text-decoration-line: none;
+  margin: 0;
+  color: var(--black);
+}
+.general-info__icon {
+  grid-area: gi-icon;
+  width: 70px;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+}
+.general-info__slogan {
+  grid-area: gi-slogan;
+}
+.general-info__title {
+  grid-area: gi-title;
+  margin: auto 0;
+  font-size: 1.7rem;
+}
+.general-info__enter {
+  grid-area: gi-enter;
+  width: 6rem;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  background-color: var(--orange-red);
+  border-radius: var(--border-radius-big);
+  box-shadow: var(--box-shadow);
+  justify-self: end;
+  text-align: center;
+  margin: auto 0;
+  line-height: 2;
+}
+.general-info__enter a {
+  color: var(--white);
+}
+.general-info__tag {
+  grid-area: gi-tag;
+}
+.general-info__tag a {
+  font-size: 0.7rem;
+  color: var(--dark-gray);
+}
 
+.sub-title {
+  display: grid;
+  grid-auto-columns: auto 100px;
+  grid-template-areas: "st-left st-right";
+}
+.sub-title__left {
+  grid-area: st-left;
+  padding: 0 0 5px 0;
+  margin: 0 0 0 15px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.sub-title__right {
+  grid-area: st-right;
+  font-size: 0.8rem;
+  margin: auto 10px 5px;
+  color: var(--orange-red);
+}
 
-
+.see-genre {
+  display: block;
+  background: var(--orange-red);
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  margin: 2rem auto 3rem auto;
+  padding: 0;
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 2;
+  text-align: center;
+}
 
 /* I. スマホ, ii. ホームページ */
-.feature-info{
-    display: block;
-    height: 400px;
-    width: 300px;
-    margin: 30px auto;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px whitesmoke;
+.feature-info {
+  display: block;
+  height: 400px;
+  width: 300px;
+  margin: 30px auto;
+  border-radius: var(--border-radius-big);
+  box-shadow: var(--box-shadow);
 }
+.feature-info__link {
+  height: 350px;
+}
+.feature-info h2 {
+  font-size: 2.2rem;
+}
+.feature-info__link > * {
+  margin: 0;
+}
+.feature-info__link > p,
+h2 {
+  padding: 5px;
+}
+.feature-info img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--border-radius-big) var(--border-radius-big) 0 0;
+}
+.feature-info___tag > a {
+  background-color: gray;
+}
+
+.event-info {
+  display: grid;
   
-        .feature-info__link{
-            height: 350px;
-        }
-        .feature-info__link > *{
-            margin: 0;
-        }
-        .feature-info__link > p, h2{
-            padding: 5px;
-        }
-        .feature-info img {
-            object-fit: cover;
-            object-position: 50% 50%;
-            width: 100%;
-            height: 250px;
-            border-radius: 20px 20px 0 0;
-        } 
-        .feature-info___tag > a {
-            background-color: gray;
-        }
+}
 
+.event-info__links {
+  width: ;
+  height: 250px;
+  margin: 0 20px;
+  padding: 0;
+}
 
-
+.event-info__img {
+  width: 310px;
+  height: 200px;
+}
 
 /* I. スマホ, iii. ジャンル */
 
-
 /* I. スマホ, iv. ジャンル別リスト */
-
 
 /* I. スマホ, v. 全体リスト */
 
-
 /* I. スマホ, vi. 詳細ページ */
-
-
 
 /* II. タブレット */
 /* II. タブレット, i. 複数のページで使うunit */
 
-
 /* II. タブレット, ii. ホームページ */
-
 
 /* II. タブレット, iii. ジャンル */
 
-
 /* II. タブレット, iv. ジャンル別リスト */
-
 
 /* II. タブレット, v. 全体リスト */
 
-
 /* II. タブレット, vi. 詳細ページ */
-
 
 /* III. パソコン */
 /* III. パソコン, i. 複数のページで使うunit */
 
-
 /* III. パソコン, ii. ホームページ */
-
 
 /* III. パソコン, iii. ジャンル */
 
-
 /* III. パソコン, iv. ジャンル別リスト */
-
 
 /* III. パソコン, v. 全体リスト */
 
-
 /* III. パソコン, vi. 詳細ページ */
-
-
-
-
-
