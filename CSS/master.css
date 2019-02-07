@@ -18,15 +18,17 @@ html {
   /* 色を使う時、この中から一つ使う */
   --red: #e51d28;
   --orange-red: #f16969;
+  --black: #000;
   --dark-gray: #333;
   --gray: #777;
   --light-gray: #aaa;
+  --off-white: whitesmoke;
   --white: #fff;
   /* border-radiusと一緒に使う */
   --border-radius-small: 0.5rem;
   --border-radius-big: 1rem;
   /* box-shadowと一緒に使う */
-  --box-shadow: 0 0.2rem 0 0.5rem var(--light-gray);
+  --box-shadow: 3px 3px 3px var(--off-white);
   /* 常に上にあるやつ（top bar）の高さ */
   --header-height: 2.5rem;
   /* パソコンなどの画面のでかいやつを使うための幅の上限 */
@@ -38,6 +40,7 @@ html {
   color: var(--dark-gray);
   font-family: "Trebuchet MS", sans-serif;
   line-height: 1.3;
+  font-size: 16px;
   /* 自動的のスクロールをアニメイトする */
   scroll-behavior: smooth;
 }
