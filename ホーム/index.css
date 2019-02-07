@@ -3,7 +3,7 @@
 }
 
 html {
-  --red: #e51d28;
+  --red: #e03952;
   --orangered: #f16969;
   --green: #3c3;
   --gray: rgba(139, 139, 139, 0.644);
@@ -14,10 +14,10 @@ html {
   --tag-space: 20px;
   --gutter: 1rem;
   color: #333;
-  font-family: "Trebuchet MS","メイリオ", sans-serif;
+  font-family: "Trebuchet MS", "メイリオ", sans-serif;
   line-height: 1.3;
   scroll-behavior: smooth;
-} 
+}
 
 /* should only be used on html */
 .no-scroll {
@@ -174,7 +174,7 @@ section {
   opacity: 1;
 }
 
-.open-visual__text{
+.open-visual__text {
   display: inline-block;
   position: absolute;
   top: 15rem;

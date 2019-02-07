@@ -95,7 +95,7 @@ a {
   background: var(--orange-red);
   width: 280px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
   margin: 2rem auto 3rem auto;
   padding: 0;
@@ -140,7 +140,6 @@ h2 {
 
 .event-info {
   display: grid;
-  
 }
 
 .event-info__links {
