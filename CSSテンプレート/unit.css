@@ -14,17 +14,24 @@
 
 /* I. スマホ */
 /* I. スマホ, i. 複数のページで使うunit */
+.student-org {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  justify-content: start;
+}
 .general-info {
   display: grid;
-  grid-template-columns: 80px auto auto;
-  grid-auto-rows: 20px 40px 20px;
+  grid-template-columns: 70px auto auto;
+  grid-auto-rows: 20px 30px 20px;
   grid-template-areas:
     "gi-icon gi-slogan ."
     "gi-icon gi-title gi-enter"
     "gi-icon gi-tag gi-tag";
-  padding: 0 10px;
-  margin: 20px auto;
-  max-width: 380px;
+  padding: 0;
+  margin: 5px 15px;
+  width: 310px;
 }
 .general-info > *,
 a {
@@ -35,10 +42,10 @@ a {
 }
 .general-info__icon {
   grid-area: gi-icon;
-  width: 70px;
+  width: 60px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
-  margin: auto;
+  margin: auto 0;
 }
 .general-info__slogan {
   grid-area: gi-slogan;
@@ -46,11 +53,11 @@ a {
 .general-info__title {
   grid-area: gi-title;
   margin: auto 0;
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 .general-info__enter {
   grid-area: gi-enter;
-  width: 6rem;
+  width: 5rem;
   height: 1.5rem;
   font-size: 0.7rem;
   background-color: var(--orange-red);
@@ -138,20 +145,51 @@ h2 {
   background-color: gray;
 }
 
-.event-info {
-  display: grid;
+.event {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 1vw;
 }
 
-.event-info__links {
-  width: ;
-  height: 250px;
-  margin: 0 20px;
+.event-info {
+  display: block;
+  width: 310px;
+  height: 280px;
+  margin: 20px 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.event-info__link {
+  display: grid;
+  grid-template-rows: 200px 20px 40px 20px;
+  grid-template-areas:
+    "e-img"
+    "e-slogan"
+    "e-title"
+    "e-desc";
   padding: 0;
 }
-
+.event-info__link > p,
+h4 {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
 .event-info__img {
+  grid-area: e-img;
+  border-radius: var(--border-radius-small);
   width: 310px;
   height: 200px;
+}
+.event-info__slogan {
+  grid-area: e-slogan;
+}
+.event-info__title {
+  grid-area: e-title;
+  font-size: 1.5rem;
+}
+.event-info__desc {
+  grid-area: e-desc;
 }
 
 /* I. スマホ, iii. ジャンル */
