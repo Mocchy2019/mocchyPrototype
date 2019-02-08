@@ -46,7 +46,7 @@ html {
   /* パソコンなどの画面のでかいやつを使うための幅の上限 */
   --max-width: 1300px;
   /* 溝 */
-  --gutter: 1rem;
+  --gutter: 0.7rem;
 
   /* 大体全部の要素に使われるルール */
   color: var(--dark-gray);
