@@ -15,12 +15,14 @@
 /* I. スマホ */
 /* I. スマホ, i. 複数のページで使うunit */
 .student-org {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: column;
   overflow-x: auto;
   justify-content: start;
 }
+
 .general-info {
   display: grid;
   grid-template-columns: 70px auto auto;
@@ -53,6 +55,7 @@ a {
 .general-info__title {
   grid-area: gi-title;
   margin: auto 0;
+  padding: 0;
   font-size: 1rem;
 }
 .general-info__enter {
@@ -104,7 +107,7 @@ a {
   height: 40px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
-  margin: 2rem auto 3rem auto;
+  margin: 0.5rem auto 3rem auto;
   padding: 0;
   color: var(--white);
   font-size: 1.4rem;
@@ -113,8 +116,43 @@ a {
 }
 
 /* I. スマホ, ii. ホームページ */
+.open-visual {
+  position: relative;
+  height: 500px;
+  margin: 0 0 30px 0;
+  overflow: hidden;
+}
+
+.open-visual__image {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  object-position: 50% 0%;
+  width: 100vw;
+  height: 80vh;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.open-visual__image--shown {
+  opacity: 1;
+}
+
+.open-visual__text {
+  display: inline-block;
+  position: absolute;
+  top: 15rem;
+  left: 10vw;
+  z-index: 5;
+  text-align: center;
+  color: var(--white);
+  font-size: 6vw;
+  text-shadow: 2px 2px 3px rgb(53, 53, 53);
+}
+
 .feature-info {
   display: block;
+  position: relative;
   height: 400px;
   width: 300px;
   margin: 30px auto;
@@ -151,13 +189,11 @@ h2 {
   -webkit-overflow-scrolling: touch;
   margin: 0 1vw;
 }
-
 .event-info {
   display: block;
   width: 310px;
   height: 280px;
   margin: 20px 10px;
-  border-bottom: 1px solid var(--light-gray);
 }
 .event-info__link {
   display: grid;
@@ -177,9 +213,12 @@ h4 {
 }
 .event-info__img {
   grid-area: e-img;
-  border-radius: var(--border-radius-small);
+  object-fit: cover;
+  object-position: 50% 50%;
   width: 310px;
   height: 200px;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow);
 }
 .event-info__slogan {
   grid-area: e-slogan;
@@ -191,14 +230,41 @@ h4 {
 .event-info__desc {
   grid-area: e-desc;
 }
+.mgz-info {
+  width: 310px;
+  margin: 30px auto;
+}
+.mgz-info__img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 310px;
+  box-shadow: var(--box-shadow);
+}
 
 /* I. スマホ, iii. ジャンル */
 
-/* I. スマホ, iv. ジャンル別リスト */
+/* I. スマホ, iv. リスト */
+.org-card {
+  display: grid;
+  grid-auto-rows: 90px 230px;
+  justify-items: center;
+}
+.org-card__img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 310px;
+  height: 200px;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow);
+}
 
-/* I. スマホ, v. 全体リスト */
+.mgz-card {
+  display: grid;
+  grid-auto-rows: 90px 230px;
+  justify-items: center;
+}
 
-/* I. スマホ, vi. 詳細ページ */
+/* I. スマホ, v. 詳細ページ */
 
 /* II. タブレット */
 /* II. タブレット, i. 複数のページで使うunit */
@@ -207,11 +273,9 @@ h4 {
 
 /* II. タブレット, iii. ジャンル */
 
-/* II. タブレット, iv. ジャンル別リスト */
+/* II. タブレット, iv. リスト */
 
-/* II. タブレット, v. 全体リスト */
-
-/* II. タブレット, vi. 詳細ページ */
+/* II. タブレット, v. 詳細ページ */
 
 /* III. パソコン */
 /* III. パソコン, i. 複数のページで使うunit */
@@ -220,8 +284,6 @@ h4 {
 
 /* III. パソコン, iii. ジャンル */
 
-/* III. パソコン, iv. ジャンル別リスト */
+/* III. パソコン, iv. リスト */
 
-/* III. パソコン, v. 全体リスト */
-
-/* III. パソコン, vi. 詳細ページ */
+/* III. パソコン, v. 詳細ページ */
