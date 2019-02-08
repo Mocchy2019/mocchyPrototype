@@ -271,7 +271,7 @@ h4 {
 
 .preference-box {
 	background-color: var(--orange-red);
-	color: white;
+	color: var(--white);
 	padding: 5px;
 	font-size: 16px;
 	border-radius: 5px;
@@ -284,6 +284,10 @@ h4 {
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
+}
+
+.preference:click .preference-content{
+	display: block;
 }
 
 .org-card {
