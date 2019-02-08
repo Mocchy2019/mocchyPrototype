@@ -20,12 +20,12 @@
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: column;
   grid-gap: 0.3rem 1.5rem;
-	overflow-x: auto;
+  overflow-x: auto;
   justify-content: start;
   margin: 5px;
 }
 
-	.general-info {
+.general-info {
   display: grid;
   grid-template-columns: 70px auto auto;
   grid-auto-rows: 20px 30px 20px;
@@ -86,21 +86,27 @@ a {
 
 .sub-title {
   display: grid;
-  grid-auto-columns: auto 100px;
+  grid-auto-columns: auto 80px;
   grid-template-areas: "st-left st-right";
 }
 .sub-title__left {
   grid-area: st-left;
   padding: 0 0 5px 0;
-  margin: 0 0 0 15px;
+  margin: 0;
   border-bottom: 1px solid var(--light-gray);
 }
 .sub-title__right {
   grid-area: st-right;
-  font-size: 0.8rem;
+  width: 80px;
   margin: auto 10px 5px;
-  =color: var(--orange-red);
-	text-decoration-line: none;
+  font-size: 0.8rem;
+  color: var(--orange-red);
+  text-decoration-line: none;
+}
+.sub-title__dropdown {
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .see-genre {
@@ -186,7 +192,7 @@ a {
 .feature-info__link > p,
 h2 {
   padding: 5px;
-	text-decoration-line: none;
+  text-decoration-line: none;
 }
 .feature-info img {
   object-fit: cover;
@@ -256,7 +262,7 @@ h4 {
 .mgz-info__img {
   object-fit: cover;
   object-position: 50% 50%;
-  width: 310px;
+  width: 300px;
   box-shadow: var(--box-shadow);
 }
 
@@ -264,30 +270,37 @@ h4 {
 
 /* I. スマホ, iv. リスト */
 .preference {
-	position: relative;
-	display: block;
-	margin: 20px 20px 20px 0;
+  width: 100px;
+  margin: 15px 0;
 }
-
 .preference-box {
-	background-color: var(--orange-red);
-	color: var(--white);
-	padding: 5px;
-	font-size: 16px;
-	border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: var(--gray);
+  border: none;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-small);
+  color: var(--white);
+  font-size: 1rem;
 }
-
 .preference-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+  display: none;
+  position: absolute;
+  width: 90px;
+  margin: 0 5px 0 5px;
+  background-color: var(--orange-red);
+  z-index: 1;
 }
-
-.preference:click .preference-content{
-	display: block;
+.preference-content button {
+  background-color: var(--orange-red);
+  border: none;
+  color: var(--white);
+}
+.preference:hover .preference-content {
+  display: block;
+}
+.preference:hover .preference-box {
+  background-color: var(--orange-red);
 }
 
 .org-card {
@@ -300,14 +313,14 @@ h4 {
 .org-card__img {
   object-fit: cover;
   object-position: 50% 50%;
-  width: 310px;
+  width: 300px;
   height: 200px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
 }
 
 .event-card {
-  width: 310px;
+  width: 300px;
   height: 335px;
   padding: var(--card-padding);
   margin: 30px auto;
@@ -334,7 +347,7 @@ h4 {
   grid-area: ec-img;
   object-fit: cover;
   object-position: 50% 50%;
-  width: 310px;
+  width: 300px;
   height: 200px;
   border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
 }
@@ -360,7 +373,6 @@ h4 {
 
 /* I. スマホ, v. 詳細ページ */
 /* I. スマホ, v. 詳細ページ, ①団体詳細*/
-
 
 /* I. スマホ, v. 詳細ページ, ②イベント詳細*/
 
