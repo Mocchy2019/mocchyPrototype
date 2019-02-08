@@ -40,7 +40,7 @@
 .general-info > *,
 a {
   display: inline-block;
-  text-decoration-line: none;
+  text-decoration: none;
   margin: 0;
   color: var(--black);
 }
@@ -101,7 +101,7 @@ a {
   margin: auto 10px 5px;
   font-size: 0.8rem;
   color: var(--orange-red);
-  text-decoration-line: none;
+  text-decoration: none;
 }
 .sub-title__dropdown {
   height: 30px;
@@ -194,7 +194,7 @@ a {
 .feature-info__link > p,
 h2 {
   padding: 5px;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 .feature-info img {
   object-fit: cover;
