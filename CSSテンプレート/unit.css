@@ -81,7 +81,7 @@ a {
 }
 .general-info__tag a {
   font-size: 0.7rem;
-  color: var(--dark-gray);
+  color: var(--gray);
 }
 
 .sub-title {
@@ -204,7 +204,7 @@ h2 {
   border-radius: var(--border-radius-big) var(--border-radius-big) 0 0;
 }
 .feature-info___tag > a {
-  background-color: gray;
+	color: var(--gray);
 }
 
 .event-info__scroll {
@@ -235,7 +235,7 @@ h2 {
 .event-info__link > p,
 h4 {
   padding: 0;
-  margin: 0;
+  margin: 15px;
   align-self: center;
 }
 .event-info__img {
@@ -256,6 +256,7 @@ h4 {
 }
 .event-info__desc {
   grid-area: e-desc;
+	color: var(--gray);
 }
 .mgz-info {
   width: 310px;
