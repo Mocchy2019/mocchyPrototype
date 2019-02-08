@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+/* 画面をportraitモードに固定 */
+/* @media only screen and (orientation: landscape) {
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+} */
+
 html {
   /* よく使われる変数 */
   /* 注意！これらを変更したら、複数のページで大きな効果がある */
@@ -22,13 +30,17 @@ html {
   --dark-gray: #333;
   --gray: #777;
   --light-gray: #aaa;
-  --off-white: whitesmoke;
+  --off-white: rgba(245, 245, 245, 0.918);
   --white: #fff;
+  /* ~card用のpadding&margin */
+  --card-padding: 15px 0;
+  --card-margin: 0 auto;
   /* border-radiusと一緒に使う */
   --border-radius-small: 0.5rem;
   --border-radius-big: 1rem;
   /* box-shadowと一緒に使う */
-  --box-shadow: 3px 3px 3px var(--off-white);
+  --box-shadow: 3px 3px 10px var(--off-white);
+  --box-shadow-big: 3px 3px 2rem rgb(241, 240, 240);
   /* 常に上にあるやつ（top bar）の高さ */
   --header-height: 2.5rem;
   /* パソコンなどの画面のでかいやつを使うための幅の上限 */
