@@ -1,0 +1,68 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.event-card {
+  width: 300px;
+  height: 360px;
+  margin: 30px auto;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--box-shadow-big);
+}
+.event-card__link {
+  display: grid;
+  grid-template-rows: 250px 110px;
+  grid-template-areas:
+    "ec-img"
+    "ec-text";
+  padding: 0;
+  text-decoration: none;
+}
+.event-card__text {
+  grid-area: ec-text;
+  display: grid;
+  grid-template-rows: 30px 40px 40px;
+  height: 110px;
+  border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
+  z-index: 0;
+}
+.event-card__text:before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 110px;
+  width: 300px;
+  background-color: #fff;
+  opacity: 0.7;
+  box-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+.event-card__text > * {
+  z-index: 3;
+  margin: 0 15px;
+  color: var(--black);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.event-card__slogan {
+  color: rgb(6, 6, 177);
+  align-self: end;
+  font-size: 0.8rem;
+}
+.event-card__title {
+  font-size: 1.5rem;
+  align-self: center;
+}
+.event-card__desc {
+}
+.event-card__img {
+  grid-area: ec-img;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 300px;
+  height: 360px;
+  align-self: start;
+  border-radius: var(--border-radius-small);
+}
