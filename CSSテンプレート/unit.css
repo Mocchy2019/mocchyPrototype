@@ -271,39 +271,7 @@ h4 {
 /* I. スマホ, iii. ジャンル */
 
 /* I. スマホ, iv. リスト */
-.preference {
-  width: 100px;
-  margin: 15px 0;
-}
-.preference-box {
-  width: 100px;
-  height: 30px;
-  background-color: var(--gray);
-  border: none;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-small);
-  color: var(--white);
-  font-size: 1rem;
-}
-.preference-content {
-  display: none;
-  position: absolute;
-  width: 90px;
-  margin: 0 5px 0 5px;
-  background-color: var(--orange-red);
-  z-index: 1;
-}
-.preference-content button {
-  background-color: var(--orange-red);
-  border: none;
-  color: var(--white);
-}
-.preference:hover .preference-content {
-  display: block;
-}
-.preference:hover .preference-box {
-  background-color: var(--orange-red);
-}
+
 
 .org-card {
   display: grid;
