@@ -28,14 +28,14 @@
 .general-info {
   display: grid;
   grid-template-columns: 70px auto auto;
-  grid-auto-rows: 20px 30px 20px;
+  grid-auto-rows: 40px 40px;
   grid-template-areas:
-    "gi-icon gi-slogan ."
-    "gi-icon gi-title gi-enter"
-    "gi-icon gi-tag gi-tag";
+    "gi-icon gi-slogan gi-enter"
+    "gi-icon gi-title gi-enter";
   padding: 5px 0;
   margin: auto;
-  width: 310px;
+  width: 300px;
+  height: 90px;
 }
 .general-info > *,
 a {
@@ -53,12 +53,20 @@ a {
 }
 .general-info__slogan {
   grid-area: gi-slogan;
+  font-size: 0.8rem;
+  align-self: end;
+  color: blue;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .general-info__title {
   grid-area: gi-title;
-  margin: auto 0;
   padding: 0;
   font-size: 1rem;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .general-info__enter {
   grid-area: gi-enter;
@@ -68,6 +76,7 @@ a {
   background-color: var(--orange-red);
   border-radius: var(--border-radius-big);
   box-shadow: var(--box-shadow);
+  align-self: center;
   justify-self: end;
   text-align: center;
   margin: auto 0;
@@ -232,7 +241,7 @@ h2 {
 }
 .event-info {
   display: block;
-  width: 310px;
+  width: 300px;
   height: 280px;
   padding: 0;
   margin: 20px auto;
@@ -257,7 +266,7 @@ h4 {
   grid-area: e-img;
   object-fit: cover;
   object-position: 50% 50%;
-  width: 310px;
+  width: 300px;
   height: 200px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
@@ -274,13 +283,18 @@ h4 {
   color: var(--gray);
 }
 .mgz-info {
-  width: 310px;
-  margin: 30px auto;
+  width: 300px;
+  margin: 30px 0;
+}
+.mgz-info__slogan {
+  width: 300px;
+  margin: 0;
 }
 .mgz-info__img {
   object-fit: cover;
   object-position: 50% 50%;
   width: 300px;
+  margin: 10px 0;
   box-shadow: var(--box-shadow);
 }
 
@@ -290,7 +304,7 @@ h4 {
 .preference {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 30px 0;
+  margin: 40px 0;
   border-top: var(--border-normal);
   border-bottom: var(--border-normal);
 }
@@ -304,7 +318,7 @@ h4 {
 
 .org-card {
   display: grid;
-  grid-auto-rows: 80px 200px;
+  grid-auto-rows: 90px 200px;
   justify-items: center;
   padding: var(--card-padding);
   margin: var(--card-margin);
@@ -364,7 +378,7 @@ h4 {
 
 .mgz-card {
   display: grid;
-  grid-auto-rows: 80px 440px;
+  grid-template-rows: 80px 440px;
   justify-items: center;
   padding: var(--card-padding);
   margin: var(--card-margin);
