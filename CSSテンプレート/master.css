@@ -50,7 +50,7 @@ html {
 
   /* 大体全部の要素に使われるルール */
   color: var(--dark-gray);
-  font-family: "Trebuchet MS","游ゴシック","メイリオ", sans-serif;
+  font-family: "Trebuchet MS", "游ゴシック", "メイリオ", sans-serif;
   line-height: 1.3;
   font-size: 16px;
   /* 自動的のスクロールをアニメイトする */
@@ -68,7 +68,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-header {
+.header {
   display: grid;
   grid-template-columns: 3rem 1fr 3rem;
   grid-template-rows: var(--header-height) 1fr;
