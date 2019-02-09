@@ -128,12 +128,15 @@ body.no-scroll {
 
 .header__nav {
   grid-area: nav;
+  display: grid;
+  align-content: center;
   text-align: center;
   background-color: var(--orange-red);
 }
 
 .header__nav > * {
   height: var(--header-height);
+  margin: 3vh;
 }
 
 .header__nav a {
