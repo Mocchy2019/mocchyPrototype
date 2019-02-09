@@ -35,6 +35,9 @@ html {
   /* ~card用のpadding&margin */
   --card-padding: 15px 0;
   --card-margin: 0 auto;
+  /* borderの定義 */
+  --border-strong: 0.07rem solid var(--gray);
+  --border-normal: 0.03rem solid var(--light-gray);
   /* border-radiusと一緒に使う */
   --border-radius-small: 0.5rem;
   --border-radius-big: 1rem;
@@ -73,7 +76,7 @@ body.no-scroll {
   grid-template-columns: 3rem 1fr 3rem;
   grid-template-rows: var(--header-height) 1fr;
   grid-template-areas:
-    "search title burger"
+    ". title burger"
     "nav nav nav";
   position: fixed;
   top: 0;
@@ -82,7 +85,7 @@ body.no-scroll {
   height: var(--header-height);
   overflow-y: hidden;
   transition: height 0.2s;
-  z-index: 1;
+  z-index: 100;
   background-color: var(--red);
   color: var(--white);
   font-size: 1.5rem;
@@ -120,7 +123,7 @@ body.no-scroll {
   height: 0.15em;
   margin: 0.15em 0;
   background-color: var(--white);
-  border-radius: 20%;
+  border-radius: var(--border-radius-big);
 }
 
 .header__nav {
@@ -135,6 +138,7 @@ body.no-scroll {
 
 .header__nav a {
   vertical-align: middle;
+  color: var(--white);
 }
 
 main {

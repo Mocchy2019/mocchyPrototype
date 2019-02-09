@@ -93,7 +93,7 @@ a {
   grid-area: st-left;
   padding: 0 0 5px 0;
   margin: 0;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: var(--border-strong);
 }
 .sub-title__right {
   grid-area: st-right;
@@ -288,8 +288,18 @@ h4 {
 
 /* I. スマホ, iv. リスト */
 .preference {
-  display: block;
-  margin: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 0;
+  border-top: var(--border-normal);
+  border-bottom: var(--border-normal);
+}
+.preference button {
+  -webkit-appearance: none;
+  padding: 1px;
+  border: none;
+  background-color: transparent;
+  color: var(--dark-gray);
 }
 
 .org-card {
