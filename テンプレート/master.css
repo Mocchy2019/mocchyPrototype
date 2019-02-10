@@ -32,6 +32,7 @@ html {
   --light-gray: #aaa;
   --off-white: rgba(245, 245, 245, 0.918);
   --white: #fff;
+  --opaque-white: rgba(245, 245, 245, 0.8);
   /* ~card用のpadding&margin */
   --card-padding: 15px 0;
   --card-margin: 0 auto;
@@ -42,8 +43,8 @@ html {
   --border-radius-small: 0.5rem;
   --border-radius-big: 1rem;
   /* box-shadowと一緒に使う */
-  --box-shadow: 3px 3px 10px var(--off-white);
-  --box-shadow-big: 3px 3px 2rem rgb(241, 240, 240);
+  --box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   /* 常に上にあるやつ（top bar）の高さ */
   --header-height: 2.5rem;
   /* パソコンなどの画面のでかいやつを使うための幅の上限 */
@@ -128,12 +129,15 @@ body.no-scroll {
 
 .header__nav {
   grid-area: nav;
+  display: grid;
+  align-content: center;
   text-align: center;
   background-color: var(--orange-red);
 }
 
 .header__nav > * {
   height: var(--header-height);
+  margin: 3vh;
 }
 
 .header__nav a {
