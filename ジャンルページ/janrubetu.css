@@ -130,7 +130,7 @@ section {
 /* ご自分で何か入れてみて */
 .genre {
   display: grid;
-  grid-template-rows: 5rem repeat(6, 10rem 2rem);
+  grid-template-rows: 5rem repeat(6, 8rem 2rem) 1rem;
   grid-template-columns: 4fr 4fr;
   grid-template-areas:
     "title title"
@@ -153,21 +153,23 @@ section {
 }
 h2 {
   grid-area: title;
+  font-size: 23px;
   }
 h5 {
   color: #123;
-  margin: 1px 1rem auto;
+  margin: 1px 5px auto 18px;
   text-align: left;
+  font-size: 13px;
 }
  
 .club__athlete {
   grid-area: tai;
   color: #fff;
-  background-image: url(https://openclipart.org/image/700px/svg_to_png/233331/strongman.png);
+  background-image: url(https://via.placeholder.com/700.png?text=M);
   background-size: cover;
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .circle__athlete {
@@ -177,7 +179,7 @@ h5 {
   background-size: cover;
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .volunteer {
@@ -186,7 +188,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .languages {
@@ -195,7 +197,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .study {
@@ -204,7 +206,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .technology {
@@ -213,7 +215,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .carrier {
@@ -222,7 +224,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .exchange__inter {
@@ -231,7 +233,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .dance {
@@ -240,7 +242,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .committee {
@@ -249,7 +251,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .culture__japan {
@@ -258,7 +260,7 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
 
 .music {
@@ -267,5 +269,5 @@ h5 {
   background-image: url(https://via.placeholder.com/700.png?text=M);
   border-style: solid;
   border-radius: 15px;
-  margin: 4px;
+  margin: 15px 15px 0 15px;
 }
