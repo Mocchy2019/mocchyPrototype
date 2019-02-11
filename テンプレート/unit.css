@@ -53,9 +53,9 @@ a {
 }
 .general-info__slogan {
   grid-area: gi-slogan;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   align-self: end;
-  color: blue;
+  color: var(--blue);
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -63,7 +63,7 @@ a {
 .general-info__title {
   grid-area: gi-title;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -84,9 +84,6 @@ a {
 }
 .general-info__enter a {
   color: var(--white);
-}
-.general-info__tag {
-  grid-area: gi-tag;
 }
 .general-info__tag a {
   font-size: 0.7rem;
@@ -210,7 +207,7 @@ select.sub-title__dropdown {
   height: 365px;
 }
 .feature-info p {
-  color: rgba(13, 13, 153, 0.959);
+  color: var(--blue);
 }
 .feature-info h2 {
   font-size: 2.2rem;
@@ -230,6 +227,9 @@ h2 {
 }
 .feature-info___tag {
   padding: 0 15px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .feature-info___tag > a {
   color: var(--gray);
@@ -298,7 +298,7 @@ h4 {
   object-fit: cover;
   object-position: 50% 50%;
   width: 300px;
-  margin: 10px 0;
+  margin: 0;
   box-shadow: var(--box-shadow);
 }
 
@@ -308,7 +308,7 @@ h4 {
 .preference {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 40px 0;
+  margin: 30px 0 0 0;
   border-top: var(--border-normal);
   border-bottom: var(--border-normal);
 }
@@ -317,7 +317,7 @@ h4 {
   padding: 1px;
   border: none;
   background-color: transparent;
-  color: var(--dark-gray);
+  color: var(--gray);
 }
 
 .org-card {
@@ -370,7 +370,7 @@ h4 {
 }
 .event-card__slogan {
   grid-area: ec-slogan;
-  color: blue;
+  color: var(--blue);
 }
 .event-card__title {
   grid-area: ec-title;
@@ -382,7 +382,7 @@ h4 {
 
 .mgz-card {
   display: grid;
-  grid-template-rows: 80px 440px;
+  grid-template-rows: 90px 440px;
   justify-items: center;
   padding: var(--card-padding);
   margin: var(--card-margin);
