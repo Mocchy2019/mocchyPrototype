@@ -1,0 +1,97 @@
+main {
+  padding: 0;
+}
+.event-detail {
+  display: grid;
+  grid-template-rows: 225px 60px auto 50px auto auto 65px 30px;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-gap: 8px;
+  grid-template-areas:
+  "top-img top-img top-img"
+  ". title ."
+  ". des ."
+  ". des-title ."
+  "des-scr des-scr des-scr"
+  ". rec ."
+  ". apply ."
+  ". . ."
+  ;
+}
+.event-detail__top-img {
+  grid-area: top-img;
+  height: 225px;
+  width: 100%;
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+
+.event-detail__title {
+  grid-area: title;
+  margin: auto;
+  font-size: 23px;
+  font-family: "メイリオ";
+}
+
+.event-detail__description {
+  grid-area: des;
+   word-wrap: break-word;
+}
+p {
+  margin: 0 auto;
+  width: 270px;
+  font-size: 18px;
+}
+
+.event-detail__des-title {
+  grid-area: des-title;
+  margin: 1rem auto auto 0 ;
+  font-size: 20px;
+  font-family: "メイリオ";
+}
+
+.event-detail__scrole {
+  grid-area: des-scr; 
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.event-detail__scr-item {
+ display: inline-block;
+ margin: 5%;
+ width: 70%;
+ vertical-align: top;
+ white-space: normal; 
+}
+
+.event-detail__recommed {
+  grid-area: rec;
+  word-wrap: break-word;
+}
+
+.event-detail__apply {
+  grid-area: apply;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: #e0395c;
+  border-bottom: solid 4px #dd273f;
+  border-radius: 3px;
+  font-family: "メイリオ";
+  font-size: 25px;
+  margin: 15px auto 0px auto;
+}
+
+.general-info {
+  display: grid;
+  grid-template-columns: 70px 180px 85px;
+  grid-auto-rows: 30px 30px;
+  grid-template-areas:
+    "gi-icon gi-slogan gi-enter"
+    "gi-icon gi-title gi-enter";
+  padding: 5px 0;
+  margin: 0 auto auto 15px;
+}
