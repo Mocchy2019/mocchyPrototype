@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.container {
+  --grid-gap: 1px;
+  display: grid;
+  width: 10em;
+  height: 10em;
+  padding: var(--grid-gap);
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--grid-gap);
+  background-color: black;
+}
+
+.container input[type="checkbox"] {
+  display: none;
+}
+
+.container label {
+  display: block;
+  cursor: pointer;
+  background-color: pink;
+  transition: background-color 0.2s;
+}
+
+.container :checked + label {
+  background-color: red;
+}
