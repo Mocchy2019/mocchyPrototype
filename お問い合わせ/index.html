@@ -3,58 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/テンプレート/master.css" />
     <link rel="stylesheet" href="index.css" />
-    <title>0212試作お問い合わせ</title>
+    <title>お問い合わせ</title>
   </head>
   <body>
-    <div class="top-bar">
-      <div class="top-bar__title">Mocchy</div>
-      <div class="top-bar__burger">
+    <div class="header">
+      <div class="header__title">Mocchy</div>
+      <div class="header__burger">
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <nav class="top-bar__nav">
-        <div><a href="#">リンク1</a></div>
-        <div><a href="#">リンク2</a></div>
-        <div><a href="#">リンク3</a></div>
-        <div><a href="#">リンク4</a></div>
+      <nav class="header__nav">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">学生団体</a></div>
+        <div><a href="#">イベント</a></div>
+        <div><a href="#">雑誌</a></div>
+        <div><a href="#">About Mocchy</a></div>
+        <div><a href="#">お問い合わせ</a></div>
       </nav>
     </div>
     <main>
-      <form action="               " method="post">
-        <section class="cu">
-          <h1 class="cu__title">お問い合わせ</h1>
-          <h2 class="cu__name">名前</h2>
-          <p class="cu__name2">
-            <textarea name="name" rows="1" size=""></textarea>
-          </p>
-          <h2 class="cu__mycode">大学名・学籍番号</h2>
-          <p class="cu__mycode2">
-            <textarea name="mycode" rows="1" size=""></textarea>
-          </p>
-          <h2 class="cu__e-mail">メールアドレス</h2>
-          <p class="cu__e-mail2">
-            <textarea name="e-mail" rows="1" size=""></textarea>
-          </p>
-          <h2 class="cu__qeustion">お問い合わせ内容</h2>
-          <p class="cu__qeustion2">
-            <textarea name="qeustion" rows="5.5" size=""></textarea>
-          </p>
-          <h3 class="cu__sent">送信</h3>
-        </section>
+      <h1>お問い合わせ</h1>
+      <form action="#">
+        <label for="name">名前</label>
+        <input type="text" name="name" id="name" />
+        <label for="university">大学名</label>
+        <input type="text" name="university" id="university" />
+        <label for="student-num">学生番号</label>
+        <input type="text" name="student-num" id="student-num" />
+        <label for="mail">メール</label>
+        <input type="text" name="mail" id="mail" />
+        <label for="contents">内容</label>
+        <textarea name="contents" id="contents"></textarea>
       </form>
     </main>
-
-    <footer class="footer">
-      <img
-        src="https://via.placeholder.com/50.png?text=M"
-        alt="Mocchy logo"
-        class="footer__logo"
-      />
-      <div class="footer__title">Mocchy</div>
-      <div class="footer__contact"><a href="#">ページトップへ</a></div>
-    </footer>
-    <script type="otoiawase.js"></script>
+    <script src="/テンプレート/master.js"></script>
   </body>
 </html>
