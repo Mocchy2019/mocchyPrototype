@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.mgz-explanation {
+  font-weight: bold;
+}
+.mgz-explanation__text {
+  margin: 10px 0;
+}
+.mgz-preview {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.mgz-preview__img {
+  width: 300px;
+  display: block;
+  object-position: 50% 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 10px 0;
+  box-shadow: var(--box-shadow);
+}
