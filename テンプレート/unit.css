@@ -192,6 +192,10 @@ select.sub-title__dropdown {
 }
 .select-tag :hover .select-tag__section{
 	display: block;
+	position: relative;
+	height: 100px;
+	width: 300px;
+	z-index: 1;
 }
 
 /* I. スマホ, ii. ホームページ */
