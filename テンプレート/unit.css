@@ -133,14 +133,12 @@ select.sub-title__dropdown {
 
 .see-genre {
   display: block;
-  background: var(--orange-red);
   width: 280px;
   height: 40px;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
   margin: 0.5rem auto 3rem auto;
   padding: 0;
-  color: var(--white);
   font-size: 1.4rem;
   line-height: 2;
   text-align: center;
@@ -149,35 +147,36 @@ select.sub-title__dropdown {
 
 .select-genre{
 	display: grid;
-	grid-template-columns: 100px 100px 100px;
-	grid-gap: 1px;
+	grid-template-columns: 98px 98px 98px;
+	grid-gap: 6px;
 	position: relative;
 	width: 300px;
 	margin: 15px auto;
 	padding: 0;
-	background-color: pink;
 }
 
 .select-genre label {
 	display: grid;
 	grid-template-rows: 80px 30px;
 	width: 100%;
+  background-color: #FFD700;
+  color: var(--black);
   transition: background-color 0.2s;
+	border-radius: var(--border-radius-small);
 }
 .select-genre input[type="checkbox"]{
-	display: none;
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
 }
 .select-genre__container{
   transition: background-color 0.2s;
 }
-.select-genre :checked + label {
-	background-color: var(--orange-red);
-	color: var(--white);
-}
+
 .select-genre__img{
 	width: 70px;
 	height: 70px;
-	background: gray;
 	justify-self: center;
 	align-self: end;
 	border: none;
@@ -185,17 +184,36 @@ select.sub-title__dropdown {
 .select-genre__container span{
 	text-align: center;
 	align-self: start;
+	font-weight: bold;
 }
 
+.select-tag__button {
+	width: 300px;
+	border: var(--border-strong);
+	border-radius: var(--border-radius-big);
+	background-color: var(--white);
+	font-size: 1rem;
+	color: var(--dark-gray);
+}
 .select-tag__section{
 	display: none;
 }
-.select-tag :hover .select-tag__section{
+.select-tag:hover .select-tag__section{
 	display: block;
 	position: relative;
-	height: 100px;
 	width: 300px;
+	border: var(--border-normal);
 	z-index: 1;
+}
+.select-tag__category {
+	margin: 20px 15px 0;
+	text-align: center;
+	font-weight: bolder;
+}
+.select-tag__option{
+	display: grid;
+	grid-template-columns: auto 1fr auto 1fr;
+	margin-left: 35px;
 }
 
 /* I. スマホ, ii. ホームページ */

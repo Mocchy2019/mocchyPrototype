@@ -144,6 +144,7 @@ body.no-scroll {
 .header__nav a {
   vertical-align: middle;
   color: var(--white);
+	text-decoration: none;
 }
 
 main {
