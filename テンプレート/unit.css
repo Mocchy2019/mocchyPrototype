@@ -434,7 +434,7 @@ select.sub-title__dropdown {
 }
 .event-card__link {
   display: grid;
-  grid-template-rows: 30px 60px 30px 200px;
+  grid-template-rows: 40px 40px 40px 200px;
   grid-template-areas:
     "ec-slogan"
     "ec-title"
@@ -442,8 +442,11 @@ select.sub-title__dropdown {
     "ec-img";
   padding: 0;
 }
-.event-card__link > p,
-h4 {
+.event-card__link {
+	text-decoration: none;
+}
+.event-card__link h4,
+.event-card__link p{
   padding: 0;
   margin: 0 0 0 1rem;
   align-self: center;
@@ -458,14 +461,17 @@ h4 {
 }
 .event-card__slogan {
   grid-area: ec-slogan;
+	align-self: end;
   color: var(--blue);
 }
 .event-card__title {
   grid-area: ec-title;
-  font-size: 1.5rem;
+  font-size: 2rem;
+	color: var(--black);
 }
 .event-card__desc {
   grid-area: ec-desc;
+	color: var(--black);
 }
 
 .mgz-card {
