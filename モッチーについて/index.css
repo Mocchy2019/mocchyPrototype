@@ -149,6 +149,7 @@ section{
   padding-top: 30px ;
   height: 220px;
   width: auto;
+
 }
 
 .aboutMocchy_descriptivetext {
@@ -158,6 +159,10 @@ section{
   font-weight: bold;
   line-height: normal ;
   letter-spacing: auto;
+}
+
+.aboutMocchy_descriptivetext_title{
+  font-weight: bold;
 }
 
 .aboutMocchy_imformation{
