@@ -10,7 +10,7 @@ html {
   --total-max-width: 50rem;
   --gutter: 0.5rem;
   color: #333;
-  font-family: Verdana, sans-serif;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
   line-height: 1.3;
 }
 
@@ -34,12 +34,10 @@ body {
 main {
   padding: var(--top-bar-height) var(--gutter) 0;
   min-height: 100vh;
-  padding-left: 15px;
+  padding-bottom: : 15px ;
 }
 
 section {
-  margin: var(--gutter) 0;
-  align-self: center;
 }
 
 .top-bar {
@@ -110,6 +108,7 @@ section {
   background-color: var(--red);
   color: var(--white);
   width: 100%;
+  max-width: 100% ;
   min-height: 5rem;
   padding: 0 var(--gutter);
 }
@@ -155,7 +154,7 @@ section{
 .aboutMocchy_descriptivetext {
   padding-top: 30px;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
   font-weight: bold;
   line-height: normal ;
   letter-spacing: auto;
@@ -170,20 +169,25 @@ section{
   margin: 0 ;
   padding-top: 30px;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
   font-weight: bold;
   line-height: 24px ;
 }
 
 .aboutMocchy_imformationcontents {
-padding-top: 30px;
-font-size: 16px;
-font-family: sans-serif;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+}
+
+.aboutMocchy_memberintroduction{
+  padding-left: 15px ;
+  position: center ;
 }
 
 .aboutMocchy_memberintroductiontitle {
   padding: 30px 0 0 0;
-  font-family:inherit;
+  font-family:font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;;
   font-size: 25px;
   letter-spacing: auto ;
   font-weight: bold;
@@ -191,11 +195,11 @@ font-family: sans-serif;
 }
 
 .aboutMocchy_memberintroduction1 {
-  margin-top: 30px;
+  margin-top: 30px ;
   border-top: 30px;
   background-color: #fdfbf2;
   border-radius: 10px ;
-  box-shadow: 10px 10px #eaeeef ;
+  filter: drop-shadow(3px 3px 6px #6E6E6E);
 }
 
 .aboutMocchy_memberintroduction1_upper{
@@ -209,7 +213,7 @@ font-family: sans-serif;
   border-radius: 50% ;
   width:67px ;
   height:67px ;
-
+　
 }
 
 .aboutMocchy_memberintroduction1_upper1{
@@ -218,7 +222,7 @@ font-family: sans-serif;
   float:left ;
   font-size: 16px ;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
 }
 
 .aboutMocchy_memberintroduction1_upper2{
@@ -227,7 +231,7 @@ font-family: sans-serif;
   float: left;
   font-size: 16px ;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;;
 }
 
 .aboutMocchy_memberintroduction1_under{
@@ -241,6 +245,61 @@ font-family: sans-serif;
 }
 
 .aboutMocchy_memberintroduction1_under2 {
+  margin: 0 ;    /*☚なんで効果発揮しないの～～？？*/
+  padding: 0 15px 15px 15px ;
+}
+
+.aboutMocchy_memberintroduction2 {
+  margin: 30px 0 30px 0 ;
+  background-color: #fdfbf2;
+  border-radius: 10px ;
+  filter: drop-shadow(3px 3px 6px #6E6E6E);
+
+}
+
+.aboutMocchy_memberintroduction2_upper{
+  width: auto;
+  height:75px;
+  padding: 15px 0 0 15px ;
+}
+
+.aboutMocchy_memberintroduction2_img1{
+  float: left ;
+  border-radius: 50% ;
+  width:67px ;
+  height:67px ;
+　
+}
+
+.aboutMocchy_memberintroduction2_upper1{
+  margin:0 0;
+  padding:15px 0 0 15px ;
+  float:left ;
+  font-size: 16px ;
+  font-weight: bold;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+}
+
+.aboutMocchy_memberintroduction2_upper2{
+  margin: 0 0 ;
+  padding:0 0 0 15px ;
+  float: left;
+  font-size: 16px ;
+  font-weight: bold;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;;
+}
+
+.aboutMocchy_memberintroduction2_under{
+  margin: 0 ;
+  padding: 0 15px ;
+}
+
+.aboutMocchy_memberintroduction2_under1{
+  margin: 0 0 ;
+  font-weight: bold;
+}
+
+.aboutMocchy_memberintroduction2_under2 {
   margin: 0 ;    /*☚なんで効果発揮しないの～～？？*/
   padding: 0 15px 15px 15px ;
 }
