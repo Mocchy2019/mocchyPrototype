@@ -109,7 +109,6 @@ main{
 .cu__title {
   grid-area: title;
   margin: 0 auto;
-  font-family:    ;
   font-size: 25px;
   font-weight: bold;
   margin-left: auto;

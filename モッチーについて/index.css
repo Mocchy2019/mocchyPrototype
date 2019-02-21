@@ -28,17 +28,17 @@ a:visited {
 body {
   margin: 0 auto;
   max-width: var(--total-max-width);
-
+  line-height: 24px ;
 }
 
 main {
   padding: var(--top-bar-height) var(--gutter) 0;
   min-height: 100vh;
+  padding-left: 15px;
 }
 
 section {
   margin: var(--gutter) 0;
-  text-align: center;
   align-self: center;
 }
 
@@ -131,32 +131,104 @@ section {
 }
 
 /* ご自分で何か入れてみて */
-.hoge{
-  height:100px;
-  border:0;
- padding:0;
- font-size:0.8em;
- color: :#aaa;
- border:solid 2px #ccc;
- width:100%;
- resize: vertical;
-
-
-top-bar-height: 3rem;
-total―max-width: 50rem;
-gutter: 1.0rem;
-
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 10px;
-}
-
-.初期メンバー {
-  padding:0 0;
-  font-size:35px;
+.aboutMocchy_title{
+  padding: 30px 0 0 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: inherit;
 }
 
 .image-sample{
-  max-width: 790px;
-  width:100%
+  padding-top: 30px ;
+  height: 220px;
+  width:320px;
+}
+
+.aboutMocchy_descriptivetext {
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: normal ;
+  letter-spacing: auto;
+}
+
+.aboutMocchy_imformationtitle {
+  margin: 0 ;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 24px ;
+}
+
+.aboutMocchy_imformationcontents {
+padding-top: 30px;
+font-size: 16px;
+font-family: sans-serif;
+}
+
+.aboutMocchy_memberintroductiontitle {
+  padding: 30px 0 0 0;
+  font-family:inherit;
+  font-size: 25px;
+  letter-spacing: auto ;
+  font-weight: bold;
+  color: inherit;
+
+}
+
+.aboutMocchy_memberintroduction1 {
+  margin-top: 30px;
+  border-top: 30px;
+  background-color: #fdfbf2;
+  border-radius: 10px ;
+  box-shadow: 10px 10px #eaeeef ;
+}
+
+.aboutMocchy_memberintroduction1_upper{
+  width: auto;
+  height:75px;
+  padding: 15px 0 0 15px ;
+}
+
+.aboutMocchy_memberintroduction1_img1{
+  float: left ;
+  border-radius: 50% ;
+  width:67px ;
+  height:67px ;
+
+}
+
+.aboutMocchy_memberintroduction1_upper1{
+  margin:0 0;
+  padding:15px 0 0 15px ;
+  float:left ;
+  font-size: 16px ;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.aboutMocchy_memberintroduction1_upper2{
+  margin: 0 0 ;
+  padding:0 0 0 15px ;
+  float: left;
+  font-size: 16px ;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.aboutMocchy_memberintroduction1_under{
+  margin: 0 ;
+  padding: 0 15px ;
+}
+
+.aboutMocchy_memberintroduction1_under1{
+  margin: 0 0 ;
+  font-weight: bold;
+}
+
+.aboutMocchy_memberintroduction1_under2 {
+  margin: 0 ;    /*☚なんで効果発揮しないの～～？？*/
+  padding: 0 15px 15px 15px ;
 }
