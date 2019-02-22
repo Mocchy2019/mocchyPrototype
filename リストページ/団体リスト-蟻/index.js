@@ -38,7 +38,10 @@ const groups = mkArr(50, randGroup);
 const reducer = (s, a) => ({ ...s, ...a });
 
 const init = {
-  genres: genres.slice(),
+  genres: genres.reduce((ac, x) => {
+    ac[x] = true;
+    return ac;
+  }, {}),
   official: true,
   unofficial: true,
   manyParties: true,
@@ -57,7 +60,7 @@ const shouldShow = criteria => item =>
   (item.official ? criteria.official : criteria.unofficial) &&
   (item.manyParties ? criteria.manyParties : criteria.fewParties) &&
   (item.usefulForJob ? criteria.usefulForJob : criteria.notUsefulForJob) &&
-  criteria.genres.includes(item.genre) &&
+  criteria.genres[item.genre] &&
   ((0 < item.members && item.members <= 10 && criteria.members01to10) ||
     (10 < item.members && item.members <= 50 && criteria.members11to50) ||
     (50 < item.members && criteria.members51toInf));
