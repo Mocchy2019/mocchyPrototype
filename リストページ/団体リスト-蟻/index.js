@@ -2,7 +2,7 @@
 
 // possible genres
 
-const genres = ["art", "international", "martial-arts", "sports"];
+const genres = ["art", "international", "martialArts", "sports"];
 
 // helpers for making fake data
 
