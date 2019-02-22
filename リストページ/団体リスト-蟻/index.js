@@ -81,6 +81,13 @@ const Chooser = ({ s, d }) =>
   e(
     Fragment,
     null,
+    genres.map(x =>
+      e(Checkbox, {
+        name: x,
+        checked: s.genres[x],
+        onChange: e => d({ genres: { ...s.genres, [x]: e.target.checked } }),
+      }),
+    ),
     e(Checkbox, {
       name: "official",
       checked: s.official,
