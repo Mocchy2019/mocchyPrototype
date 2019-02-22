@@ -71,7 +71,7 @@ const { createElement: e, Fragment, useReducer } = React;
 
 const Checkbox = ({ name, checked, onChange }) =>
   e(
-    Fragment,
+    "div",
     null,
     e("input", { type: "checkbox", id: name, checked, onChange }),
     e("label", { htmlFor: name }, name),
