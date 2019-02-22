@@ -83,6 +83,7 @@ const Chooser = ({ s, d }) =>
     null,
     genres.map(x =>
       e(Checkbox, {
+        key: x,
         name: x,
         checked: s.genres[x],
         onChange: e => d({ genres: { ...s.genres, [x]: e.target.checked } }),
