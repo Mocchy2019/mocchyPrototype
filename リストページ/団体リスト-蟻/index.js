@@ -136,9 +136,34 @@ const Chooser = ({ s, d }) =>
     }),
   );
 
-const ItemView = props => e("div", { key: props.name }, JSON.stringify(props));
+const ItemView = props =>
+  e(
+    "tr",
+    { key: props.name },
+    e("td", null, props.name),
+    e("td", null, String(props.official)),
+    e("td", null, props.members),
+    e("td", null, props.genre),
+    e("td", null, String(props.manyParties)),
+    e("td", null, String(props.usefulForJob)),
+  );
 
-const ItemList = ({ items }) => items.map(ItemView);
+const ItemList = ({ items }) =>
+  e(
+    "table",
+    null,
+    e(
+      "tr",
+      null,
+      e("th", null, "name"),
+      e("th", null, "official"),
+      e("th", null, "members"),
+      e("th", null, "genre"),
+      e("th", null, "manyParties"),
+      e("th", null, "usefulForJob"),
+    ),
+    items.map(ItemView),
+  );
 
 const App = () => {
   const [s, d] = useReducer(reducer, init);
