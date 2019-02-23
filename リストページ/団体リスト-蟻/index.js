@@ -38,8 +38,8 @@ const groups = mkArr(50, randGroup);
 const reducer = (s, a) => ({ ...s, ...a });
 
 const init = {
-  genres: genres.reduce((ac, x) => {
-    ac[x] = true;
+  genres: genres.reduce((ac, g) => {
+    ac[g] = true;
     return ac;
   }, {}),
   official: true,
@@ -81,12 +81,12 @@ const Chooser = ({ s, d }) =>
   e(
     Fragment,
     null,
-    genres.map(x =>
+    genres.map(g =>
       e(Checkbox, {
-        key: x,
-        name: x,
-        checked: s.genres[x],
-        onChange: e => d({ genres: { ...s.genres, [x]: e.target.checked } }),
+        key: g,
+        name: g,
+        checked: s.genres[g],
+        onChange: e => d({ genres: { ...s.genres, [g]: e.target.checked } }),
       }),
     ),
     e(Checkbox, {
