@@ -153,16 +153,20 @@ const ItemList = ({ items }) =>
     "table",
     null,
     e(
-      "tr",
+      "thead",
       null,
-      e("th", null, "name"),
-      e("th", null, "official"),
-      e("th", null, "members"),
-      e("th", null, "genre"),
-      e("th", null, "manyParties"),
-      e("th", null, "usefulForJob"),
+      e(
+        "tr",
+        null,
+        e("th", null, "name"),
+        e("th", null, "official"),
+        e("th", null, "members"),
+        e("th", null, "genre"),
+        e("th", null, "manyParties"),
+        e("th", null, "usefulForJob"),
+      ),
     ),
-    items.map(ItemView),
+    e("tbody", null, items.map(ItemView)),
   );
 
 const App = () => {
