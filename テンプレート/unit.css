@@ -48,6 +48,9 @@
 .general-info__icon {
   grid-area: gi-icon;
   width: 60px;
+	height: 60px;
+	object-fit: cover;
+  object-position: 50% 50%;
   border-radius: var(--border-radius-small);
   box-shadow: var(--box-shadow);
   margin: auto 0;
@@ -139,6 +142,8 @@ select.sub-title__dropdown {
   box-shadow: var(--box-shadow);
   margin: 0.5rem auto 3rem auto;
   padding: 0;
+	background-color: var(--orange-red);
+	color: var(--white);
   font-size: 1.4rem;
   line-height: 2;
   text-align: center;
