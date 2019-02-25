@@ -3,9 +3,8 @@ main {
 }
 .event-detail {
   display: grid;
-  grid-template-rows: 225px 60px auto 50px auto auto 65px 30px;
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-gap: 8px;
+  grid-template-rows: auto 100px 200px 75px auto 65px auto 85px;
+  grid-template-columns: 1fr 20fr 1fr;
   grid-template-areas:
   "top-img top-img top-img"
   ". title ."
@@ -13,13 +12,13 @@ main {
   ". des-title ."
   "des-scr des-scr des-scr"
   ". rec ."
-  ". apply ."
+  ". ha ."
+  "apply apply apply"
   ". . ."
   ;
 }
 .event-detail__top-img {
   grid-area: top-img;
-  height: 225px;
   width: 100%;
   margin-left: auto; 
   margin-right: auto;
@@ -28,26 +27,33 @@ main {
 
 .event-detail__title {
   grid-area: title;
-  margin: auto;
-  font-size: 23px;
+  margin: 30px auto 30px;
+  font-size: 25pt;
+  font-weight: bold;
   font-family: "メイリオ";
+  text-align: center;
 }
 
 .event-detail__description {
   grid-area: des;
    word-wrap: break-word;
+   overflow-y: hidden;
+   /*いい感じに表示できるようにしたい*/
 }
 p {
   margin: 0 auto;
-  width: 270px;
-  font-size: 18px;
+  width: auto;
+  font-size: 14pt;
+  font-family: "遊ゴシック";
+  font-weight: bold;
 }
 
 .event-detail__des-title {
   grid-area: des-title;
-  margin: 1rem auto auto 0 ;
-  font-size: 20px;
+  margin: 30px auto 0 0 ;
+  font-size: 18pt;/*25ptだとデカすぎる*/
   font-family: "メイリオ";
+  font-weight: bold;
 }
 
 .event-detail__scrole {
@@ -61,7 +67,8 @@ p {
 .event-detail__scr-item {
  display: inline-block;
  margin: 5%;
- width: 70%;
+ width: 250px;
+ height: 100%;
  vertical-align: top;
  white-space: normal; 
 }
@@ -69,29 +76,36 @@ p {
 .event-detail__recommed {
   grid-area: rec;
   word-wrap: break-word;
+  font-size: 18pt;/*25ptだとデカすぎる*/
+  font-family:"メイリオ"; 
+  font-weight: bold;
+  margin: 14px auto 15px 0;
+}
+
+.event-detail__hashtag {
+  grid-area: ha;
+  font-family: ;
+  font-size: ;
 }
 
 .event-detail__apply {
   grid-area: apply;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+  width: 280px;
+  height: 40px;
+  box-shadow: var(--box-shadow);
+  align-self: center;
+  justify-self: center;
   color: #fff;
   background: #e0395c;
-  border-bottom: solid 4px #dd273f;
-  border-radius: 3px;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto 0 15px 0;
   font-family: "メイリオ";
-  font-size: 25px;
-  margin: 15px auto 0px auto;
+  font-size: 15pt;
+  font-weight: bold;
+  line-height: 2;
 }
 
 .general-info {
-  display: grid;
-  grid-template-columns: 70px 180px 85px;
-  grid-auto-rows: 30px 30px;
-  grid-template-areas:
-    "gi-icon gi-slogan gi-enter"
-    "gi-icon gi-title gi-enter";
-  padding: 5px 0;
-  margin: 0 auto auto 15px;
+  margin: 0 10px 15px 10px;
 }
