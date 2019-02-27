@@ -1,1 +1,109 @@
-.
+main {
+  padding: 40px 0 0 0;
+}
+
+.general-info{
+  grid-template-columns: 70px auto 0;
+}
+
+.general-info__title {
+  overflow-x: visible;
+}
+
+.org-detail { 
+  display: grid;
+  grid-template-rows: 180px 60px auto 100px 100px auto 100px 60px 60px 60px;
+  grid-template-columns: 1fr 20fr 1fr;
+  grid-template-areas: 
+  "org-pic org-pic org-pic"
+  ". act-tit ."
+  ". act-con ."
+  ". ws ."
+  ". mem-tit ."
+  "mem-mes mem-mes mem-mes"
+  ". org-rec ."
+  ". org-hash ."
+  ". sns-tit ."
+  ". sns-ic .";
+}
+
+.org-detail__top-img {
+  grid-area: org-pic;
+}
+
+.org-detail__activity-title {
+  grid-area: act-tit;
+}
+
+.org-detail__activity-content {
+  grid-area: act-con;
+  word-wrap: break-word;
+  overflow-y: hidden;
+}
+
+.org-detail__weekly-spot {
+  grid-area: ws;
+}
+
+.org-detail__members-title {
+  grid-area: mem-tit;
+}
+
+.org-detail__members-messages {
+  grid-area: mem-mes;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.org-m-card {
+  display: inline-grid;
+  width: 213px;
+  height: 180px;
+  margin: 15px;
+  vertical-align: top;
+  white-space: normal;
+  background-color: #faf3cd; 
+  grid-template-rows: 15px 70px 90px 5px;
+  grid-template-columns:5px 70px 60px 5px;
+  grid-template-areas: 
+  "om-pic om-pic om-na ."
+  "om-pic om-pic om-be ."
+  ". om-w om-w om-w ."
+  ". om-c om-c om-c .";
+}
+
+.om-card__pic {
+  grid-area: om-pic;
+}
+
+.om-card__name {
+  grid-area: om-na;
+}
+
+.om-card__belong {
+  grid-area: om-be;
+}
+
+.om-card__word {
+  grid-area: om-w;
+}
+
+.om-card__comment {
+  grid-area: om-c;
+}
+
+.org-detail__recommend {
+  grid-area: org-rec;
+}
+
+.org-detail__hashtag {
+  grid-area: org-hash;
+}
+.social-title {
+  grid-area: sns-tit;
+}
+.social-icon {
+  grid-area: sns-ic;
+}

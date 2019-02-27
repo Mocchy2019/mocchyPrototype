@@ -73,7 +73,7 @@ p {
  white-space: normal; 
 }
 
-.event-detail__recommed {
+.event-detail__recommend {
   grid-area: rec;
   word-wrap: break-word;
   font-size: 18pt;/*25ptだとデカすぎる*/
