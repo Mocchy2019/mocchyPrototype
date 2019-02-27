@@ -23,6 +23,9 @@ html {
   /* よく使われる変数 */
   /* 注意！これらを変更したら、複数のページで大きな効果がある */
 
+  /*テーマカラー*/
+  --mailcolor: #ED3D57;
+
   /* 色を使う時、この中から一つ使う */
   --red: #e03952;
   --orange-red: #e03952;
@@ -34,30 +37,50 @@ html {
   --white: #fff;
   --blue: rgb(20, 20, 167);
   --opaque-white: rgba(245, 245, 245, 0.8);
+
+  /*余白*/
+      /*基本の余白*/
+  --padding-general:30px ;
+      /*水平方向で隣り合うユニット間の余白*/
+  --unit-unit_hori: 13px;
+
+      /*タイトル書き始め位置*/  /*左端から１５px*/
+
   /* ~card用のpadding&margin */
   --card-padding: 15px 0;
   --card-margin: 0 auto;
+
   /* borderの定義 */
   --border-strong: 0.07rem solid var(--gray);
   --border-normal: 0.03rem solid var(--light-gray);
+
   /* border-radiusと一緒に使う */
+  --roundness-general: 10px ;
   --border-radius-small: 0.5rem;
   --border-radius-big: 1rem;
+
   /* box-shadowと一緒に使う */
   --box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
     0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+
   /* 常に上にあるやつ（top bar）の高さ */
   --header-height: 2.5rem;
+
   /* パソコンなどの画面のでかいやつを使うための幅の上限 */
   --max-width: 1300px;
+
   /* 溝 */
   --gutter: 0.7rem;
+
+  /*ドロップシャドウ  よくわかんない*/
+  --dropshadow-general: X3Y3B10 ;
 
   /* 大体全部の要素に使われるルール */
   color: var(--dark-gray);
   font-family: "Trebuchet MS", "メイリオ", "游ゴシック", sans-serif;
   line-height: 1.3;
   font-size: 16px;
+
      /*font　general　by design-team*/
   --font-title: Meiryo,25pt,bold,black;
   --font-name:Meityo,20pt,bold, black;
@@ -69,9 +92,11 @@ html {
   scroll-behavior: smooth;
 
   /*font-space general by design-team*/
+      /*タイトルの文字間隔*/
   --space-title: 0px ;
+      /*タイトル以外の文字間隔*/
   --space-general:8px ;
-  
+
 }
 
 body {
@@ -162,6 +187,44 @@ body.no-scroll {
 main {
   padding: var(--header-height) var(--gutter) 0;
   min-height: 100vh;
+
+  /*四角ボタン*/
+  --font-button:Meiryo,15pt,bold,white;
+  --wight:280px;
+  --height:140px ;
+    --dropshadow-general: X3Y3B10 ;
+
+    /*送信ボタン*/
+    --width: 100px ;
+    --height: 40px ;
+    --roundness-general: 2px ;
+    --dropshadow-general: X3Y3B10 ;
+
+    /*送信ボタン以外の丸いボタン*/
+      --font-button:Meiryo,15pt,bold,white;
+      --height:25px ;
+      --width: 105px ;
+      --roundness-general: 2px ;
+    --dropshadow-general: X3Y3B10 ;
+
+    /*もっと見る すべて表示*/
+    --font-style; sans-serif, 16pt, medium ,#ED3D57 ;
+
+}
+
+
+
+.general-info__icon{
+  --width: 60px ;
+  --height: 60px ;
+  --roundness-general: 2px
+}
+
+.preference{
+  font-family: Meiryo ;
+  font-size: 16px;
+  font-weight: regular;
+  color: #808080 ;
 }
 
 footer {
