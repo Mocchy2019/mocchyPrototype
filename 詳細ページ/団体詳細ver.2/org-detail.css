@@ -12,10 +12,10 @@ main {
 
 .org-detail { 
   display: grid;
-  grid-template-rows: 180px 60px auto 100px 100px auto 100px 60px 60px 60px;
+  grid-template-rows: 180px auto auto auto auto auto auto auto 60px 60px;
   grid-template-columns: 1fr 20fr 1fr;
   grid-template-areas: 
-  "org-pic org-pic org-pic"
+  ". org-pic ."
   ". act-tit ."
   ". act-con ."
   ". ws ."
@@ -29,24 +29,65 @@ main {
 
 .org-detail__top-img {
   grid-area: org-pic;
+  border-radius: 10px;
 }
 
 .org-detail__activity-title {
   grid-area: act-tit;
+  font-size: 18pt;
+  font-family: "メイリオ";
+  font-weight: bold;
+  margin: 30px auto 15px 0;
 }
 
 .org-detail__activity-content {
   grid-area: act-con;
   word-wrap: break-word;
   overflow-y: hidden;
+  margin: 0 0 15px 0;
 }
 
 .org-detail__weekly-spot {
   grid-area: ws;
+  margin: 15px auto 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "w-i w-w"
+  "s-i s-s";
+}
+
+.ow-icon {
+  grid-area: w-i;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ow-weekly {
+  grid-area: w-w;
+  margin: 0;
+}
+
+.os-icon {
+  grid-area: s-i;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.os-spot {
+  grid-area: s-s;
+  margin: 0 0 0 0;
 }
 
 .org-detail__members-title {
   grid-area: mem-tit;
+  font-size: 18pt;
+  font-family: "メイリオ";
+  font-weight: bold;
+  margin: 15px auto 15px 0;
 }
 
 .org-detail__members-messages {
@@ -59,51 +100,81 @@ main {
 
 .org-m-card {
   display: inline-grid;
-  width: 213px;
-  height: 180px;
+  width: 240px;
+  height: 200px;
   margin: 15px;
   vertical-align: top;
   white-space: normal;
   background-color: #faf3cd; 
-  grid-template-rows: 15px 70px 90px 5px;
-  grid-template-columns:5px 70px 60px 5px;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 6px #6e6e6e);
+  grid-template-rows: 15px 27px 26px 10px 20px 15px 77px 10px;
+  grid-template-columns:5px 10px 53px 15px 152px 5px;
   grid-template-areas: 
-  "om-pic om-pic om-na ."
-  "om-pic om-pic om-be ."
-  ". om-w om-w om-w ."
-  ". om-c om-c om-c .";
+  ". . . . . ."
+  ". . om-pic . om-na ."
+  ". . om-pic . om-be ."
+  ". . . . . ."
+  ". om-w om-w om-w om-w ."
+  ". . . . . ."
+  ". om-c om-c om-c om-c ."
+  ". . . . . ."
+  ;
 }
 
 .om-card__pic {
   grid-area: om-pic;
+  width: 53px;
+  height: 53px;
 }
 
 .om-card__name {
   grid-area: om-na;
+  height: 27px;
+  margin: 0;
+  font-size: 11pt;
 }
 
 .om-card__belong {
   grid-area: om-be;
+  height: 26px;
+  margin: 0;
+  font-size: 11pt;
 }
 
 .om-card__word {
   grid-area: om-w;
+  height: ;
+  font-size: 13pt;
+  margin: 0;
 }
 
 .om-card__comment {
   grid-area: om-c;
+  font-size: 11pt;
+  word-wrap: break-word;
 }
 
 .org-detail__recommend {
   grid-area: org-rec;
+  font-size: 18pt;
+  font-family: "メイリオ";
+  font-weight: bold;
+  margin: 30px auto 15px 0;
 }
 
 .org-detail__hashtag {
   grid-area: org-hash;
+  margin: 0 auto 15px 0;
 }
 .social-title {
   grid-area: sns-tit;
+  font-size: 18pt;
+  font-family: "メイリオ";
+  font-weight: bold;
+  margin: 15px auto 15px 0;
 }
 .social-icon {
   grid-area: sns-ic;
+  margin: 0 auto 30px 0; 
 }
