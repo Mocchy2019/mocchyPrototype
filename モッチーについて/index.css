@@ -97,6 +97,8 @@ section {
 /* probably every grandchild of .top-bar__nav will be an a */
 .top-bar__nav a {
   vertical-align: middle;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .footer {
