@@ -67,7 +67,7 @@ section {
   grid-area: title;
   text-align: center;
   align-self: center;
-  font-family:Verdana,sans-serif ;
+  font-family:Verdana,sans-serif ;  /*　Patua One のことらしい*/
 }
 
 .top-bar__burger {
@@ -76,6 +76,7 @@ section {
   cursor: pointer;
   font-family: Verdana,sans-serif ;
   width: 21px ;
+  border-radius: 10px ;
 }
 
 /* there should be only three things in the burger */
@@ -86,6 +87,9 @@ section {
   background-color: var(--white);
   border-radius: 10px ;
 }
+
+
+
 .top-bar__nav {
   grid-area: nav;
   text-align: center;
@@ -106,7 +110,7 @@ section {
   grid-template-areas:
     "logo title"
     "logo contact";
-  background-color: var(--red);
+  background-color: var(--main-color) ;
   color: var(--white);
   width: 100%;
   height: 40px ;
