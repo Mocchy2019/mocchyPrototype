@@ -73,7 +73,7 @@ html {
   --gutter: 0.7rem;
 
   /*ドロップシャドウ  よくわかんない*/
-  --dropshadow-general: X3Y3B10 ;
+  --dropshadow-general: 3px 3px 10px;
 
   /* 大体全部の要素に使われるルール */
   color: var(--dark-gray);
@@ -82,11 +82,11 @@ html {
   font-size: 16px;
 
      /*font　general　by design-team*/
-  --font-title: Meiryo,25pt,bold,black;
-  --font-name:Meityo,20pt,bold, black;
-  --font-body:sans-serif,16pt,bold,black;
-  --font-button:Meiryo,15pt,bold,white;
-  --font-catch:Meiryo,13pt,medium,black;
+  --font-title: "メイリオ", 25pt , bold, black;
+  --font-name: "メイリオ", 20pt, bold, black;
+  --font-body: sans-serif, 16pt, bold, black;
+  --font-button: "メイリオ", 15pt, bold, white;
+  --font-catch: "メイリオ", 13pt, medium, black;
 
   /* 自動的のスクロールをアニメイトする */
   scroll-behavior: smooth;
