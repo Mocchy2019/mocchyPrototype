@@ -51,8 +51,8 @@
 	height: 60px;
 	object-fit: cover;
   object-position: 50% 50%;
-  border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--roundness-general);
+  box-shadow: var(--dropshadow-general);
   margin: auto 0;
 }
 .general-info__slogan {
@@ -77,9 +77,9 @@
   width: 5rem;
   height: 1.5rem;
   font-size: 0.7rem;
-  background-color: var(--orange-red);
+  background-color: var(--theme-color);
   border-radius: var(--border-radius-big);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--dropshadow-general);
   align-self: center;
   justify-self: end;
   text-align: center;
@@ -108,7 +108,7 @@
   width: 80px;
   margin: 0 10px 5px;
   font-size: 0.8rem;
-  color: var(--orange-red);
+  color: var(--theme-color);
   text-decoration: none;
 }
 .sub-title__dropdown {
@@ -138,11 +138,11 @@ select.sub-title__dropdown {
   display: block;
   width: 280px;
   height: 40px;
-  border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--roundness-general);
+  box-shadow: var(--dropshadow-general);
   margin: 0.5rem auto 3rem auto;
   padding: 0;
-	background-color: var(--orange-red);
+	background-color: var(--theme-color);
 	color: var(--white);
   font-size: 1.4rem;
   line-height: 2;
@@ -167,7 +167,7 @@ select.sub-title__dropdown {
   background-color: #FFD700;
   color: var(--black);
   transition: background-color 0.2s;
-	border-radius: var(--border-radius-small);
+	border-radius: var(--roundness-general);
 }
 .select-genre input[type="checkbox"]{
 	display: inline-block;
@@ -268,56 +268,57 @@ select.sub-title__dropdown {
   grid-area: ov-text;
 }
 
-.feature-info {
-  display: block;
+.feature-org {
+  display: grid;
+	grid-template-rows: 280px 40px 40px 10px;
+	grid-template-columns: 90px 200px;
+	grid-template-areas: 
+	"fo-img fo-img"
+	"fo-icon fo-slogan"
+	"fo-icon fo-title"
+	"fo-space fo-space";
   position: relative;
-  height: 400px;
-  width: 300px;
+  height: 370px;
+  width: 290px;
   margin: 30px auto;
   border-radius: var(--border-radius-big);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--dropshadow-general);
 }
-.feature-info__link {
-  height: 365px;
-  text-decoration: none;
-}
-.feature-info p {
-  color: var(--blue);
-}
-.feature-info h2 {
-  font-size: 2.2rem;
-	color: var(--black);
-}
-.feature-info__link > p,
-.feature-info__link > h2 {
-  width: 300px;
-	padding: 0px 15px;
-  margin:  6px 0;
-  text-decoration: none;
-	overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-}
-.feature-info img {
-  object-fit: cover;
+.feature-org__img {
+  grid-area: fo-img;
+	object-fit: cover;
   object-position: 50% 50%;
-  width: 300px;
+  width: 290px;
   height: 280px;
   border-radius: var(--border-radius-big) var(--border-radius-big) 0 0;
 }
-.feature-info___tag {
-  width: 270px;
-	padding: 0;
-	margin: 0 15px;
-	overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.feature-org__icon {
+  grid-area: fo-icon;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+	justify-self: center;
+	align-self: center;
 }
-.feature-info___tag > a {
-  color: var(--gray);
-	text-decoration: none;
+.feature-org p{
+	grid-area: fo-slogan;
+	line-height: 1.8;
 }
+.feature-org h2{
+	grid-area: fo-title;
+	line-height: 0.7;
+	align-self: end;
+}
+.feature-org span{
+	grid-area: fo-space;
+	background-color: var(--light-gray);
+  border-radius: 0 0 var(--border-radius-big) var(--border-radius-big);
+/* 	width: 100px;
+	height: 100px; */
+}
+
 
 .event-info__scroll {
   display: grid;
@@ -355,8 +356,8 @@ select.sub-title__dropdown {
   object-position: 50% 50%;
   width: 300px;
   height: 200px;
-  border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--roundness-general);
+  box-shadow: var(--box---dropshadow-general);
 }
 .event-info__slogan {
   grid-area: e-slogan;
@@ -388,7 +389,7 @@ select.sub-title__dropdown {
   width: 300px;
 	max-height: 550px;
   margin: 0;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--dropshadow-general);
 }
 
 /* I. スマホ, iii. ジャンル */
@@ -409,7 +410,7 @@ select.sub-title__dropdown {
 	display: none;
 }
 .preference :checked + label{
-	color: var(--orange-red);
+	color: var(--theme-color);
 }
 
 .org-card {
@@ -425,8 +426,8 @@ select.sub-title__dropdown {
   object-position: 50% 50%;
   width: 300px;
   height: 200px;
-  border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--roundness-general);
+  box-shadow: var(--dropshadow-general);
 }
 
 .event-card {
@@ -434,8 +435,8 @@ select.sub-title__dropdown {
   height: 335px;
   padding: var(--card-padding);
   margin: 30px auto;
-  border-radius: var(--border-radius-small);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--roundness-general);
+  box-shadow: var(--dropshadow-general);
 }
 .event-card__link {
   display: grid;
@@ -462,7 +463,7 @@ select.sub-title__dropdown {
   object-position: 50% 50%;
   width: 300px;
   height: 200px;
-  border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
+  border-radius: 0 0 var(--roundness-general) var(--roundness-general);
 }
 .event-card__slogan {
   grid-area: ec-slogan;
