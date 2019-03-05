@@ -25,6 +25,9 @@ html {
 
   /* 色を使う時、この中から一つ使う */
   --theme-color: #ED3D57;
+	--org-color: #BFEAFA;
+	--event-color: #F89498;
+	--mgz-color: #FAEFBF;
   --black: #000;
   --dark-gray: #333;
   --gray: #777;
@@ -74,7 +77,7 @@ html {
   font-size: 16px;
 
      /*font　general　by design-team*/
-  --font-title: "メイリオ", 25pt , bold, black;
+  --font-title: "メイリオ", 25pt, bold, black;
   --font-name: "メイリオ", 20pt, bold, black;
   --font-body: sans-serif, 16pt, bold, black;
   --font-button: "メイリオ", 15pt, bold, white;
