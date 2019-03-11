@@ -3,15 +3,24 @@
 }
 
 .mgz-explanation {
+  font-family: メイリオ;
+  font-size: 25pt;
+  font-color: black;
   font-weight: bold;
 }
+
 .mgz-explanation__text {
   margin: 10px 0;
 }
+
 .mgz-preview {
+  font-family: メイリオ;
+  font-size: 25pt;
+  font-color: black;
   font-weight: bold;
   margin: 10px 0;
 }
+
 .mgz-preview__img {
   width: 300px;
   display: block;
@@ -20,4 +29,25 @@
   margin-left: auto;
   margin: 10px 0;
   box-shadow: var(--box-shadow);
+}
+
+.general-info__title {
+  font-family: メイリオ;
+  font-size: 25pt;
+  font-color: black;
+  font-weight: bold;
+}
+
+.mgz-target {
+  font-family: メイリオ;
+  font-size: 25pt;
+  font-color: black;
+  font-weight: bold;
+}
+
+.mgz-org {
+  font-family: メイリオ;
+  font-size: 25pt;
+  font-color: black;
+  font-weight: bold;
 }
