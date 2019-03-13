@@ -270,7 +270,7 @@ select.sub-title__dropdown {
 	grid-gap: 15px;
 	position: relative;
 	width: 300px;
-	margin: 15px auto;
+	margin: 10px 0  auto;
 	padding: 0;
 }
 
@@ -292,6 +292,9 @@ select.sub-title__dropdown {
 .select-genre__container{
   transition: background-color 0.2s;
 }
+.select-genre__container :checked + label{
+	background-color: var(--theme-color);
+}
 
 .select-genre__img{
 	width: 70px;
@@ -309,6 +312,7 @@ select.sub-title__dropdown {
 .select-tag__button {
 	width: 300px;
 	border: var(--border-strong);
+	margin-top: 30px;
 	border-radius: var(--border-radius-big);
 	background-color: var(--white);
 	font-size: 1rem;
@@ -325,14 +329,14 @@ select.sub-title__dropdown {
 	z-index: 1;
 }
 .select-tag__category {
-	margin: 30px 15px 0;
-	text-align: center;
+	margin: 30px 0 7.5px 15px;
 	font-weight: bolder;
 }
 .select-tag__option{
 	display: grid;
-	grid-template-columns: auto 1fr auto 1fr;
-	margin-left: 35px;
+	grid-template-columns: 20px auto;
+	grid-gap: 7.5px 0;
+	margin-left: 15px;
 }
 
 /* I. スマホ, ii. ホームページ */
@@ -399,7 +403,8 @@ select.sub-title__dropdown {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 	position: relative;
-  margin: 30px 0 0 0;
+  margin: 30px 0;
+	width: 300px;
   border-top: var(--border-normal);
   border-bottom: var(--border-normal);
 	justify-items: center;
