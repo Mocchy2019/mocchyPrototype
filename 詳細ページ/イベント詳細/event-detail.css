@@ -1,0 +1,145 @@
+.event-detail__close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 1.5vh;
+  right: 3vw;
+  z-index: 10;
+}
+.empty-space{
+  display: block;
+  position: relative;
+  width: calc(100vw - var(--gutter) * 2);
+  height: 480px;
+}
+.event-detail__top-img {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+  z-index: 5;
+}
+
+.event-detail__about {
+  display: grid;
+  grid-template-rows: 55px 100px auto;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+    ". ed-title ."
+    "ed-desc ed-desc ed-desc"
+    ". . ed-more";
+  width: 300px;
+  margin: 45px auto;
+}
+.event-detail__title {
+  grid-area: ed-title;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "メイリオ";
+  text-align: center;
+}
+.event-detail__desc {
+  grid-area: ed-desc;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-family: "遊ゴシック";
+  font-weight: bold;
+}
+.see-more {
+  grid-area: ed-more;
+  justify-self: end;
+  font-size: 13px;
+  color: #ed3d57;
+}
+
+.event-detail__info {
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-gap: 10px;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+.event-detail__info span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.event-detail__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.event-detail__subtitle {
+  display: block;
+  position: relative;
+  margin: 45px 0 15px;
+  font-size: 25px;
+  font-family: "メイリオ";
+  font-weight: bold;
+}
+
+.event-detail__scroll {
+  display: block;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 320px;
+  height: 168px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.event-detail__scr-item {
+  display: inline-block;
+  width: 300px;
+  height: 168px;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.event-detail__hashtag {
+  width: 300px;
+  margin: 0 15px;
+  padding: 0;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.event-detail__hashtag p {
+  margin: 0 0 5px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.event-detail__apply {
+  width: 280px;
+  height: 40px;
+  box-shadow: var(--box-shadow);
+  align-self: center;
+  justify-self: center;
+  color: var(--white);
+  background: var(--theme-color);
+  border-radius: var(--roundness-general);
+  text-align: center;
+  margin: 30px auto 15px;
+  font-family: "メイリオ";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.general-info {
+  margin: 0 auto 45px;
+  grid-template-columns: 70px 230px;
+  width: 300px;
+}
+
+.general-info > * {
+  max-width: 230px;
+}
