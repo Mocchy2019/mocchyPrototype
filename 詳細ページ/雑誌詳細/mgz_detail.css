@@ -51,3 +51,33 @@
   font-color: black;
   font-weight: bold;
 }
+
+.mgz-org__name {
+  font-family: メイリオ;
+  font-size: 20pt;
+  font-color: black;
+  font-weight: bold;
+}
+
+.mgz-explanation__text {
+  font-family: 游ゴシック;
+  font-size: 16pt;
+  font-color: black;
+  font-weight: bold;
+}
+
+.mgz-hashtag {
+  font-family: 游ゴシック;
+  font-size: 16pt;
+  font-color: black;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.general-info__enter {
+  color: #ED3D57;
+  font-family: 游ゴシック;
+  font-size: 16pt;
+  font-color: black;
+  font-weight: medium;
+}
