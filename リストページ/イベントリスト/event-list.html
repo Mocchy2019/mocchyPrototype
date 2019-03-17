@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="../../CSSテンプレート/master.css" />
-    <link rel="stylesheet" href="../../CSSテンプレート/unit.css" />
+    <link rel="stylesheet" href="../../テンプレート/master_revised.css" />
+    <link rel="stylesheet" href="../../テンプレート/unit.css" />
     <title>イベントリスト</title>
   </head>
 
@@ -27,42 +27,111 @@
     </div>
 
     <main>
+			<!-- sub-titleはこちら -->
+			<div class="sub-title">
+				<h3 class="sub-title__text">イベントを絞り込む</h3>
+			</div>
+			<!-- select-genreはこちら -->
+			<div class="select-genre">
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c1" />
+					<label for="c1">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532873.svg">
+						<span>アート</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c2" />
+					<label for="c2">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532873.svg">
+						<span>アート</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c3" />
+					<label for="c3">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532873.svg">
+						<span>アート</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c4" />
+					<label for="c4">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532892.svg">
+						<span>国際交流</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c5" />
+					<label for="c5">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532892.svg">
+						<span>国際交流</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c6" />
+					<label for="c6">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532892.svg">
+						<span>国際交流</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c7" />
+					<label for="c7">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532881.svg">
+						<span>武闘</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c8" />
+					<label for="c8">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532881.svg">
+						<span>武闘</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c9" />
+					<label for="c9">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532881.svg">
+						<span>武闘</span>
+					</label>
+				</div>
+			</div>
+
+
       <!-- preference(並び替え)はこちら -->
       <div class="preference">
-        <button>人気順</button>
-        <button>更新順</button>
-        <button>あいうえお順</button>
+        <input type="checkbox" id="p1">
+				<label for="p1">人気順</label>
+				<input type="checkbox" id="p2">
+				<label for="p2">更新日順</label>
+				<input type="checkbox" id="p3">
+				<label for="p3">五十音順</label>
       </div>
-
-      <!-- 選択式のsubーtitleはこちら -->
-      <div class="sub-title">
-        <div class="sub-title__left">
-          <select class="sub-title__dropdown">
-            <option>全ての学生団体</option>
-            <option>体育会系</option>
-            <option>文化系</option>
-            <option>音楽</option>
-            <option>ダンス</option>
-          </select>
+   
+        <!-- event-infoはこちら -->
+        <div class="event-info">
+					<span></span>
+					<p>リアルなフィードバック</p>
+					<h2>グループディスカッション練習会</h2>
+					<p>主催団体：en-courage</p>
+					<img
+						class="event-info__img"
+						src="https://pbs.twimg.com/media/Dt-7BOcVYAAVDd7?format=jpg&name=large"
+						alt="img"
+					/>
         </div>
-        <a class="sub-title__right" href="#"></a>
-      </div>
-
-      <div class="event-list">
-        <!-- event-cardはこちら -->
-        <div class="event-card">
-          <a class="event-card__link" href="#">
-            <p class="event-card__slogan">3333</p>
-            <h4 class="event-card__title">CCCC</h4>
-            <p class="event-card__desc">%%%%</p>
-            <img
-              class="event-card__img"
-              src="https://via.placeholder.com/500x500.png?text=kickass-event"
-              alt="img"
-            />
-          </a>
+				<div class="event-info">
+					<span></span>
+					<p>リアルなフィードバック</p>
+					<h2>グループディスカッション練習会</h2>
+					<p>主催団体：en-courage</p>
+					<img
+						class="event-info__img"
+						src="https://pbs.twimg.com/media/Dt-7BOcVYAAVDd7?format=jpg&name=large"
+						alt="img"
+					/>
         </div>
-      </div>
     </main>
     <footer class="footer">
       <img
@@ -73,6 +142,6 @@
       <div class="footer__title">Mocchy</div>
       <div class="footer__contact"><a href="#">お問い合わせ</a></div>
     </footer>
-    <script src="../../CSSテンプレート/master.js"></script>
+    <script src="../../テンプレート/master.js"></script>
   </body>
 </html>

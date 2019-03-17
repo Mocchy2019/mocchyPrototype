@@ -1,0 +1,276 @@
+<!--
+  【構成】
+      ヘッダー
+      ホームページ
+        .open-visual
+        .sub-title
+        .feature-info
+        .general-info
+        .see-genre
+        .event-info
+        .mgz-info
+      リストページ
+        preference(並び替え)
+        選択式のsub-title
+        .org-card
+        .event-card
+        .mgz-card
+      フッター
+ -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- 新HTMLを作る時はhrefのファイル参照に気をつけて！ -->
+    <link rel="stylesheet" href="master_revised.css" />
+    <link rel="stylesheet" href="unit.css" />
+    <title>unit.cssのテストHTML</title>
+  </head>
+  <body>
+    <!--スマホ　ヘッダー -->
+    <div class="header">
+      <div class="header__title">Mocchy</div>
+      <div class="header__burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="header__nav">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">学生団体</a></div>
+        <div><a href="#">イベント</a></div>
+        <div><a href="#">雑誌</a></div>
+        <div><a href="#">About Mocchy</a></div>
+        <div><a href="#">お問い合わせ</a></div>
+      </nav>
+    </div>
+
+    <main>
+      <!--スマホ　ホームページ-->
+      <section class="open-visual">
+        <img
+          src="https://tabippo.net/wp-content/uploads/20161217163922/shutterstock_187209053-680x437.jpg"
+          alt="open-visual"
+          class="open-visual__image open-visual__image--shown"
+        />
+        <img
+          src="http://www.kansai-u.ac.jp/sports/sys_img/sp_activity_00056_3.jpg"
+          alt="open-visual"
+          class="open-visual__image"
+        />
+        <img
+          src="http://www.ritsumei.ac.jp/rs/category/tokushu/150310/img/150310-img-culture-022-1.jpg"
+          alt="open-visual"
+          class="open-visual__image"
+        />
+      </section>
+      <div class="open-visual__text">
+        <h2>学生時代、たった4年。<br />充実させよう。本気になろう。</h2>
+      </div>
+
+      <!-- sub-titleはこちら -->
+      <div class="sub-title">
+        <h3 class="sub-title__left">ピックアップ！</h3>
+        <a class="sub-title__right" href="#"></a>
+      </div>
+
+      <!-- feature-infoはこちら -->
+      <section class="featured">
+        <div class="feature-info">
+          <a class="feature-info__link" href="#">
+            <img
+              src="https://tabippo.net/wp-content/uploads/20161217163922/shutterstock_187209053-680x437.jpg"
+              alt="img"
+            />
+            <p>英語で学ぶ</p>
+            <h2>ESS</h2>
+          </a>
+          <div class="feature-info___tag">
+            <a href="#">100人以上</a>
+            <a href="#">公認団体</a>
+            <a href="#">語学</a>
+            <a href="#">海外</a>
+            <a href="#">就活に役立つ</a>
+          </div>
+        </div>
+        <div class="feature-info">
+          <a class="feature-info__link" href="#">
+            <img
+              src="https://via.placeholder.com/500x500.png?text=kickass-pic"
+              alt="img"
+            />
+            <p>1111</p>
+            <h2>AAAA</h2>
+          </a>
+          <div class="feature-info___tag">
+            <a href="#">$$$$</a>
+            <a href="#">$$$$</a>
+            <a href="#">$$$$</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="sub-title">
+        <h3 class="sub-title__left">学生団体</h3>
+        <a class="sub-title__right" href="#">もっと見る！</a>
+      </div>
+      <!-- general-infoはこちら -->
+      <section class="general-info__scroll">
+        <div class="general-info">
+          <img
+            class="general-info__icon"
+            src="https://via.placeholder.com/80.png?text=1"
+            alt="icon"
+          />
+          <p class="general-info__slogan">2222</p>
+          <h2 class="general-info__title" href="#">アイウエオかきくけ</h2>
+          <div class="general-info__enter"><a href="#">気になる！</a></div>
+        </div>
+      </section>
+
+      <!-- see-genreはこちら -->
+      <a class="see-genre" href="#">ジャンル別で見る！</a>
+
+      <!-- event-infoはこちら -->
+      <section class="event-info__scroll">
+        <div class="event-info">
+          <a class="event-info__link" href="#">
+            <img
+              class="event-info__img"
+              src="https://via.placeholder.com/500x500.png?text=kickass-event"
+              alt="img"
+            />
+            <p class="event-info__slogan">3333</p>
+            <h4 class="event-info__title">CCCC</h4>
+            <p class="event-info__desc">%%%%</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- mgz-infoはこちら -->
+      <div class="mgz">
+        <div class="mgz-info">
+          <p class="mgz-info__slogan">Editor's pick</p>
+          <a href="#">
+            <img
+              class="mgz-info__img"
+              src="https://via.placeholder.com/700x990.png?text=Dope-content1"
+              alt="img"
+            />
+          </a>
+        </div>
+        <div class="mgz-info">
+          <p class="mgz-info__slogan">Editor's pick</p>
+          <a href="#">
+            <img
+              class="mgz-info__img"
+              src="https://via.placeholder.com/700x990.png?text=Dope-content1"
+              alt="img"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- スマホ　リストページ -->
+      <h1>スマホ　リストページ</h1>
+      <!-- preference(並び替え)はこちら -->
+      <div class="preference">
+        <button>人気順</button>
+        <button>更新順</button>
+        <button>あいうえお順</button>
+      </div>
+
+      <!-- 選択式のsubーtitleはこちら -->
+      <div class="sub-title">
+        <div class="sub-title__left">
+          <select class="sub-title__dropdown">
+            <option>全ての学生団体</option>
+            <option>体育会系</option>
+            <option>文化系</option>
+            <option>音楽</option>
+            <option>ダンス</option>
+          </select>
+        </div>
+        <a class="sub-title__right" href="#"></a>
+      </div>
+
+      <div class="org-list">
+        <!-- org-cardはこちら -->
+        <div class="org-card">
+          <div class="general-info">
+            <img
+              class="general-info__icon"
+              src="https://via.placeholder.com/80.png?text=1"
+              alt="icon"
+            />
+            <p class="general-info__slogan">2222</p>
+            <h2 class="general-info__title" href="#">アイウエオかきくけ</h2>
+            <div class="general-info__enter"><a href="#">気になる！</a></div>
+          </div>
+          <a href="#">
+            <img
+              class="org-card__img"
+              src="https://via.placeholder.com/500x500.png?text=awesomeness"
+              alt="img"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="event-list">
+        <!-- event-cardはこちら -->
+        <div class="event-card">
+          <a class="event-card__link" href="#">
+            <p class="event-card__slogan">3333</p>
+            <h4 class="event-card__title">CCCC</h4>
+            <p class="event-card__desc">%%%%</p>
+            <img
+              class="event-card__img"
+              src="https://via.placeholder.com/500x500.png?text=kickass-event"
+              alt="img"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="mgz-list">
+        <!-- mgz-cardはこちら -->
+        <div class="mgz-card">
+          <div class="general-info">
+            <img
+              class="general-info__icon"
+              src="https://via.placeholder.com/80.png?text=1"
+              alt="icon"
+            />
+            <p class="general-info__slogan">2222</p>
+            <h2 class="general-info__title" href="#">アイウエオかきくけ</h2>
+            <div class="general-info__enter"><a href="#">気になる！</a></div>
+          </div>
+          <a href="#">
+            <img
+              class="mgz-info__img"
+              src="https://via.placeholder.com/700x990.png?text=Dope-content1"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- スマホ フッター -->
+    <footer class="footer">
+      <img
+        src="https://via.placeholder.com/50.png?text=M"
+        alt="Mocchy logo"
+        class="footer__logo"
+      />
+      <div class="footer__title">Mocchy</div>
+      <div class="footer__contact"><a href="#">お問い合わせ</a></div>
+    </footer>
+
+    <!-- 新HTMLを作る時はhrefのファイル参照に気をつけて！ -->
+    <script src="master.js"></script>
+    <script src="slide-show.js"></script>
+  </body>
+</html>

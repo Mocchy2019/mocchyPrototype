@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="../../テンプレート/master.css" />
+    <link rel="stylesheet" href="../../テンプレート/master_revised.css" />
     <link rel="stylesheet" href="../../テンプレート/unit.css" />
-    <title>題</title>
+    <title>学生団体</title>
   </head>
 
   <body>
@@ -27,12 +27,131 @@
     </div>
 
     <main>
+			<!-- sub-titleはこちら -->
+			<div class="sub-title">
+				<h3 class="sub-title__text">団体を絞り込む</h3>
+			</div>
+			
+			<!-- select-genreはこちら -->
+			<div class="select-genre">
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c1" />
+					<label for="c1">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532873.svg">
+						<span>アート</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c2" />
+					<label for="c2">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532873.svg">
+						<span>アート</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c3" />
+					<label for="c3">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532873.svg">
+						<span>アート</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c4" />
+					<label for="c4">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532892.svg">
+						<span>国際交流</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c5" />
+					<label for="c5">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532892.svg">
+						<span>国際交流</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c6" />
+					<label for="c6">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532892.svg">
+						<span>国際交流</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c7" />
+					<label for="c7">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532881.svg">
+						<span>武闘</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c8" />
+					<label for="c8">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532881.svg">
+						<span>武闘</span>
+					</label>
+				</div>
+				<div class="select-genre__container">
+					<input type="checkbox"  id="c9" />
+					<label for="c9">
+						<img class="select-genre__img" src="https://image.flaticon.com/icons/svg/1532/1532881.svg">
+						<span>武闘</span>
+					</label>
+				</div>
+			</div>
+
+     <!-- select-tagはこちら -->
+		<div class="select-tag">
+			<button class="select-tag__button">
+			 さらに絞り込む
+		 </button>
+		 	 <div class="select-tag__section">
+				 <p class="select-tag__category">
+					 organization status
+				 </p>
+				 <div class="select-tag__option">
+					 <input type="checkbox" >
+					 <span>offical</span>
+					 <input type="checkbox" >
+					 <span>unoffical</span>
+				 </div>
+				 <p class="select-tag__category">
+					 # of members
+				 </p>
+				 <div class="select-tag__option">
+					 <input type="checkbox" >
+					 <span>~10</span>
+					 <input type="checkbox" >
+					 <span>11~50</span>
+					 <input type="checkbox" >
+					 <span>50~100</span>
+				 </div>
+				 <p class="select-tag__category">
+					 other characteristics
+				 </p>
+				 <div class="select-tag__option">
+					 <input type="checkbox" >
+					 <span>飲み会多い</span>
+					 <input type="checkbox" >
+					 <span>飲み会少ない</span>
+					 <input type="checkbox" >
+					 <span>就活に役立つ</span>
+					 <input type="checkbox" >
+					 <span>就活関係ない（笑）</span>
+				 </div>
+			 </div> 
+		</div>
+
+
       <!-- preference(並び替え)はこちら -->
       <div class="preference">
-        <button>人気順</button>
-        <button>更新順</button>
-        <button>あいうえお順</button>
+        <input type="checkbox" id="p1">
+				<label for="p1">人気順</label>
+				<input type="checkbox" id="p2">
+				<label for="p2">更新日順</label>
+				<input type="checkbox" id="p3">
+				<label for="p3">五十音順</label>
       </div>
+<<<<<<< HEAD
 
       <div class="org-list">
         <!-- org-cardはこちら -->
@@ -79,8 +198,38 @@
               src="https://pbs.twimg.com/media/Dt-7BOcVYAAVDd7.jpg:large"
             />
           </a>
+=======
+   
+        <!-- org-cardはこちら -->
+        <div class="org-info">
+					<img
+						class="org-info__img"
+						src="https://pbs.twimg.com/media/Dt-7BOcVYAAVDd7?format=jpg&name=large"
+						alt="img"
+					/>
+					<img class="org-info__icon" 
+					src="https://image.flaticon.com/icons/svg/214/214351.svg"
+            alt="icon"
+          />
+					<p>英語で学ぶ</p>
+					<h2>ESS</h2>
+					<span></span>
         </div>
-      </div>
+				<div class="org-info">
+					<img
+						class="org-info__img"
+						src="https://pbs.twimg.com/media/Dt-7BOcVYAAVDd7?format=jpg&name=large"
+						alt="img"
+					/>
+					<img class="org-info__icon" 
+					src="https://image.flaticon.com/icons/svg/214/214351.svg"
+            alt="icon"
+          />
+					<p>英語で学ぶ</p>
+					<h2>ESS</h2>
+					<span></span>
+>>>>>>> a17653759d6d997ca6ac06cd75b37a754fc4a383
+        </div>
     </main>
     <footer class="footer">
       <img
