@@ -1,0 +1,43 @@
+.select-genre__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: orangered;
+}
+.select-genre__unit {
+  display: grid;
+  grid-template-rows: 90px 20px;
+  align-content: center;
+  border: 1px solid black;
+}
+.select-genre__icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.select-genre__title {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.select-tag__dropdown {
+  width: 300px;
+  height: auto;
+}
+.select-tag__dropdown:hover .select-tag__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+}
+.select-tag__dropdown:hover .select-tag__title {
+  display: block;
+  text-align: left;
+  margin: 0 0 0 30px;
+}
+.select-tag__container,
+.select-tag__title {
+  display: none;
+}
+.select-tag__option {
+  margin: 0 0 0 30px;
+}

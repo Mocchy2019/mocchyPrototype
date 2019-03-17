@@ -10,6 +10,8 @@
         .event-info
         .mgz-info
       リストページ
+        .select-genre
+        .select-tag
         preference(並び替え)
         選択式のsub-title
         .org-card
@@ -175,6 +177,95 @@
 
       <!-- スマホ　リストページ -->
       <h1>スマホ　リストページ</h1>
+      <!-- select-genreはこちら -->
+      <section class="select-genre">
+        <div class="select-genre__menu">
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532922.svg"
+            />
+            <p class="select-genre__title">
+              国際交流
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532896.svg"
+            />
+            <p class="select-genre__title">
+              ボランティア
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532893.svg"
+            />
+            <p class="select-genre__title">
+              音楽
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532873.svg"
+            />
+            <p class="select-genre__title">
+              映画
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532893.svg"
+            />
+            <p class="select-genre__title">
+              写真
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532894.svg"
+            />
+            <p class="select-genre__title">
+              伝統
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532883.svg"
+            />
+            <p class="select-genre__title">
+              ダンス
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532907.svg"
+            />
+            <p class="select-genre__title">
+              スポーツ全般
+            </p>
+          </input>
+          <input type="checkbox" class="select-genre__unit">
+            <img
+              class="select-genre__icon"
+              src="https://image.flaticon.com/icons/svg/1532/1532878.svg"
+            />
+            <p class="select-genre__title">
+              球技
+            </p>
+          </input>
+        </div>
+      </section>
+
+      <!-- select-tagはこちら -->
+
       <!-- preference(並び替え)はこちら -->
       <div class="preference">
         <button>人気順</button>
@@ -270,7 +361,7 @@
     </footer>
 
     <!-- 新HTMLを作る時はhrefのファイル参照に気をつけて！ -->
-    <script src="master.js"></script>
-    <script src="slide-show.js"></script>
+    <script src="../テンプレート/master.js"></script>
+    <script src="../テンプレート/slide-show.js"></script>
   </body>
 </html>

@@ -305,6 +305,59 @@ h4 {
 /* I. スマホ, iii. ジャンル */
 
 /* I. スマホ, iv. リスト */
+.select-genre {
+  width: 300px;
+  margin: auto;
+}
+.select-genre__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  background-color: rgba(255, 203, 92, 0.753);
+  border-radius: var(--border-radius-small);
+}
+.select-genre__unit {
+  display: grid;
+  grid-template-rows: 90px 20px;
+  width: 100px;
+  height: 110px;
+  align-items: center;
+  justify-items: center;
+}
+.select-genre__unit {
+  display: none;
+  width: 0;
+  margin: 0;
+}
+.select-genre__unit:focus {
+  background: var(--orange-red);
+  color: var(--white);
+}
+/* .select-genre__unit:hover:nth-of-type(1) {
+  border-radius: var(--border-radius-small) 0 0 0;
+}
+.select-genre__unit:hover:nth-of-type(3) {
+  border-radius: 0 var(--border-radius-small) 0 0;
+}
+.select-genre__unit:hover:nth-last-of-type(1) {
+  border-radius: 0 0 var(--border-radius-small) 0;
+}
+.select-genre__unit:hover:nth-last-of-type(3) {
+  border-radius: 0 0 0 var(--border-radius-small);
+} */
+.select-genre__icon {
+  object-fit: cover;
+  object-position: center;
+  width: 75px;
+  height: 75px;
+  align-self: end;
+}
+.select-genre__title {
+  text-align: center;
+  font-size: 0.8rem;
+  align-self: start;
+  margin: 0;
+}
+
 .preference {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
