@@ -73,8 +73,7 @@ const Checkbox = ({ name, checked, onChange }) =>
   e(
     "div",
     null,
-    e("input", { type: "checkbox", id: name, checked, onChange }),
-    e("label", { htmlFor: name }, name),
+    e("label", null, e("input", { type: "checkbox", checked, onChange }), name),
   );
 
 const Chooser = ({ s, d }) =>
