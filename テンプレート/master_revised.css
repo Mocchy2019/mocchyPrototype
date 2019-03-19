@@ -24,10 +24,10 @@ html {
   /* 注意！これらを変更したら、複数のページで大きな効果がある */
 
   /* 色を使う時、この中から一つ使う */
-  --theme-color: #ED3D57;
-	--org-color: #BFEAFA;
-	--event-color: #F89498;
-	--mgz-color: #FAEFBF;
+  --theme-color: #ed3d57;
+  --org-color: #bfeafa;
+  --event-color: #f89498;
+  --mgz-color: #faefbf;
   --black: #000;
   --dark-gray: #333;
   --gray: #777;
@@ -38,12 +38,12 @@ html {
   --opaque-white: rgba(245, 245, 245, 0.8);
 
   /*余白*/
-      /*基本の余白*/
-  --padding-general:30px ;
-      /*水平方向で隣り合うユニット間の余白*/
+  /*基本の余白*/
+  --padding-general: 30px;
+  /*水平方向で隣り合うユニット間の余白*/
   --unit-unit_hori: 13px;
 
-      /*タイトル書き始め位置*/  /*左端から１５px*/
+  /*タイトル書き始め位置*/ /*左端から１５px*/
 
   /* ~card用のpadding&margin */
   --card-padding: 15px 0;
@@ -76,7 +76,7 @@ html {
   line-height: 1.3;
   font-size: 16px;
 
-     /*font　general　by design-team*/
+  /*font　general　by design-team*/
   --font-title: "メイリオ", 25pt, bold, black;
   --font-name: "メイリオ", 20pt, bold, black;
   --font-body: sans-serif, 16pt, bold, black;
@@ -87,11 +87,10 @@ html {
   scroll-behavior: smooth;
 
   /*font-space general by design-team*/
-      /*タイトルの文字間隔*/
-  --space-title: 0px ;
-      /*タイトル以外の文字間隔*/
-  --space-general:8px ;
-
+  /*タイトルの文字間隔*/
+  --space-title: 0px;
+  /*タイトル以外の文字間隔*/
+  --space-general: 8px;
 }
 
 body {
@@ -114,7 +113,7 @@ body.no-scroll {
     "nav nav nav";
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   max-width: var(--max-width);
   height: var(--header-height);
   overflow-y: hidden;
@@ -176,7 +175,7 @@ body.no-scroll {
 .header__nav a {
   vertical-align: middle;
   color: var(--white);
-	text-decoration: none;
+  text-decoration: none;
 }
 
 main {
@@ -184,19 +183,17 @@ main {
   min-height: 100vh;
 }
 
-
-
-.general-info__icon{
-  --width: 60px ;
-  --height: 60px ;
-  --roundness-general: 2px
+.general-info__icon {
+  --width: 60px;
+  --height: 60px;
+  --roundness-general: 2px;
 }
 
-.preference{
-  font-family: Meiryo ;
+.preference {
+  font-family: Meiryo;
   font-size: 16px;
   font-weight: regular;
-  color: #808080 ;
+  color: #808080;
 }
 
 footer {
@@ -214,16 +211,25 @@ footer {
 
 .footer__logo {
   grid-area: logo;
-  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 60px; 
   align-self: center;
   justify-self: center;
 }
 
 .footer__title {
   grid-area: title;
-  align-self: center;
+  align-self: end;
+  font-size: 20px;
 }
 
 .footer__contact {
-  grid-area: contact;
+  grid-area: contact; 
+}
+
+.footer__contact > *{
+  text-decoration-line: none;
+  color: var(--white);
+  font-size: 15px;
 }

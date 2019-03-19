@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.mgz-detail__title {
+  display: flex;
+  position: relative;
+  max-width: 320px;
+  height: 70px;
+  margin: 30px auto 15px;
+  justify-content: center;
+}
+.mgz-detail__name {
+  font-family: メイリオ;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin: auto 15px;
+  text-align: center;
+}
+
+
+.mgz-explanation__text {
+  margin: 10px 0;
+}
+
+.mgz-detail__img {
+  display: block;
+  width: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: 15px auto;
+  box-shadow: var(--dropshadow-general);
+}
+
+.mgz-org {
+  font-family: メイリオ;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.mgz-org__name {
+  font-family: メイリオ;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.mgz-explanation__text {
+  font-family: "游ゴシック";
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.general-info {
+  margin: 0 auto 45px;
+  grid-template-columns: 70px 230px;
+  width: 300px;
+}
+.general-info > * {
+  max-width: 230px;
+}
