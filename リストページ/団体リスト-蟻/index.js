@@ -38,7 +38,7 @@ const groups = mkArr(50, randGroup);
 const reducer = (s, a) => ({ ...s, ...a });
 
 const init = {
-  genres: genres.reduce((ac, g) => {
+  ...genres.reduce((ac, g) => {
     ac[g] = true;
     return ac;
   }, {}),
@@ -60,7 +60,7 @@ const shouldShow = criteria => item =>
   (item.official ? criteria.official : criteria.unofficial) &&
   (item.manyParties ? criteria.manyParties : criteria.fewParties) &&
   (item.usefulForJob ? criteria.usefulForJob : criteria.notUsefulForJob) &&
-  criteria.genres[item.genre] &&
+  criteria[item.genre] &&
   ((0 < item.members && item.members <= 10 && criteria.members01to10) ||
     (10 < item.members && item.members <= 50 && criteria.members11to50) ||
     (50 < item.members && criteria.members51toInf));
@@ -85,8 +85,8 @@ const Chooser = ({ s, d }) =>
       e(Checkbox, {
         key: g,
         name: g,
-        checked: s.genres[g],
-        onChange: e => d({ genres: { ...s.genres, [g]: e.target.checked } }),
+        checked: s[g],
+        onChange: e => d({ [g]: e.target.checked }),
       }),
     ),
     e(Checkbox, {
