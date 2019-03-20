@@ -153,6 +153,8 @@ body.no-scroll {
   grid-area: title;
   justify-self: center;
   align-self: center;
+  color: inherit;
+  text-decoration-line: inherit;
   font-weight: bold;
 }
 
