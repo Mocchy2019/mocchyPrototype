@@ -45,7 +45,7 @@
   color: rgb(4, 95, 4);
 }
 
-.event-detail__info {
+.detail__info {
   display: grid;
   grid-template-columns: 30px auto;
   grid-gap: 10px;
@@ -54,33 +54,15 @@
   margin: 0 auto;
   padding: 0;
 }
-.event-detail__info span {
+.detail__info span {
   font-size: 20px;
   font-weight: bold;
 }
-.event-detail__icon {
+.detail__icon {
   width: 30px;
   height: 30px;
 }
 
-.event-detail__scroll {
-  display: block;
-  position: relative;
-  overflow-x: auto;
-  overflow-y: hidden;
-  width: 300px;
-  height: 168px;
-  margin: 0 auto;
-  white-space: nowrap;
-}
-
-.event-detail__scr-item {
-  display: inline-block;
-  width: 280px;
-  height: 170px;
-  vertical-align: top;
-  white-space: normal;
-}
 
 .event-detail__apply {
   width: 280px;

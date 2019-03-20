@@ -96,7 +96,6 @@
   height: 300px;
   width: 290px;
   margin: 15px auto 30px;
-  padding: 0 1px;
   border-radius: var(--border-radius-big);
   box-shadow: var(--dropshadow-general);
 }
@@ -313,7 +312,6 @@
 
 .x-scroll{
 	display: grid;
-  grid-template-rows: 1fr;
   grid-auto-flow: column;
   grid-gap: 1.5rem;
   overflow-x: auto;
@@ -421,6 +419,90 @@
 }
 
 /* I. スマホ, v. 詳細ページ */
+.detail__title {
+  display: flex;
+  position: relative;
+  max-width: 320px;
+  height: 70px;
+  margin: 30px auto 15px;
+  justify-content: center;
+}
+.detail__name {
+  font-family: メイリオ;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin: auto 15px;
+  text-align: center;
+}
+
+.detail__wrapper{
+  display: grid;
+  grid-template-rows: 10px auto 10px;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: 
+  ". d-scroll ."
+  "d-arrowone d-scroll d-arrowtwo"
+  ". d-scroll .";
+  height: 200px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.detail__arrowone{
+  grid-area: d-arrowone;
+}
+.detail__arrowtwo{
+  grid-area: d-arrowtwo;
+}
+.detail__arrowone,
+.detail__arrowtwo{
+  width: 15px;
+  height: 75px;
+  align-self: center;
+}
+.detail__scroll {
+  grid-area: d-scroll;
+  display: block;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 320px;
+  min-width: 276px;
+  height: 200px;
+  white-space: nowrap;
+  justify-self: center;
+}
+.detail__scr-item {
+  display: inline-block;
+  object-fit: cover;
+  object-position: 50%;
+  width: 270px;
+  height: 190px;
+  margin: 3px;
+  border-radius: calc(var(--roundness-general)/2);
+}
+
+.detail__info {
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-gap: 10px;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+.detail__info span {
+  font-size: 20px;
+  font-weight: bold;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail__icon {
+  width: 30px;
+  height: 30px;
+}
+
 .detail__desc {
   grid-area: ed-desc;
   max-width: 320px;
@@ -451,7 +533,7 @@
 .detail__subtitle {
   display: block;
   position: relative;
-  margin: 45px auto 15px;
+  margin: 45px auto 10px;
   max-width: 320px;
   font-size: 25px;
   font-family: "メイリオ";

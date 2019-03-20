@@ -2,22 +2,7 @@
   box-sizing: border-box;
 }
 
-.mgz-detail__title {
-  display: flex;
-  position: relative;
-  max-width: 320px;
-  height: 70px;
-  margin: 30px auto 15px;
-  justify-content: center;
-}
-.mgz-detail__name {
-  font-family: メイリオ;
-  font-size: 25px;
-  color: black;
-  font-weight: bold;
-  margin: auto 15px;
-  text-align: center;
-}
+
 
 
 .mgz-explanation__text {

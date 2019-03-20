@@ -1,1 +1,64 @@
-.
+.comment {
+  display: grid;
+  grid-template-columns: 90px 210px;
+  grid-template-rows: 40px 40px 44px 130px;
+  grid-template-areas:
+    "c-icon c-name"
+    "c-icon c-info"
+    "c-title c-title"
+    "c-desc c-desc";
+  width: 300px;
+  border-radius: var(--roundness-general);
+  box-shadow: var(--dropshadow-general);
+  background-color: var(--opaque-white);
+  margin: 15px auto 30px;
+  padding: 0;
+}
+.comment__desc,
+.comment__title {
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+.comment__icon {
+  grid-area: c-icon;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+}
+.comment__name {
+  grid-area: c-name;
+  align-self: end;
+}
+.comment__info {
+  grid-area: c-info;
+}
+.comment__title {
+  grid-area: c-title;
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.comment__desc {
+  grid-area: c-desc;
+  height: 120px;
+}
+
+.detail__contact {
+  display: flex;
+  max-width: 320px;
+  margin: 0 auto 45px;
+}
+i {
+  color: var(--theme-color);
+  font-size: 70px;
+  margin: 0 3px;
+}

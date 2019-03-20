@@ -3,6 +3,7 @@ var detailDesc = document.getElementsByClassName("detail__desc");
 var i = 0;
 
 seeMore[i].onclick = myFunction;
+detailDesc[i].onclick = myFunction;
 
 function myFunction() {
   if (detailDesc[i].style.height === "60px") {

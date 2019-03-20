@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../テンプレート/master.css" />
+    <link rel="stylesheet" href="../../テンプレート/master_revised.css" />
     <link rel="stylesheet" href="../../テンプレート/unit.css" />
     <link rel="stylesheet" href="org-detail.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>団体詳細</title>
   </head>
   <body>
+    <!--スマホ　ヘッダー -->
     <div class="header">
       <div class="header__title">Mocchy</div>
       <div class="header__burger">
@@ -27,32 +29,121 @@
     </div>
 
     <main>
-      <div class="general-info">
+      <!-- タイトルはこちら -->
+      <div class="detail__title">
         <img
           class="general-info__icon"
-          src="https://via.placeholder.com/80.png?text=1"
+          src="http://event-pre.com/e/newyear4th_27/newyear4th_27.png"
           alt="icon"
         />
-        <p class="general-info__slogan">2222</p>
-        <h2 class="general-info__title" href="#">アイウエオかきくけ</h2>
-        <div class="general-info__enter"><a href="#">気になる！</a></div>
-        <div class="general-info__tag">
-          <a href="#">$$$$</a>
-          <a href="#">$$$$</a>
-          <a href="#">$$$</a>
+        <span class="detail__name">Mocchy</span>
+      </div>
+
+      <!-- 活動写真はこちら -->
+      <div class="detail__subtitle">活動風景</div>
+      <div class="detail__wrapper">
+        <img
+          class="detail__arrowtwo"
+          src="https://cdn3.iconfinder.com/data/icons/simple-arrows-essentials/48/v-10-512.png"
+        />
+        <div class="detail__scroll">
+          <img
+            class="detail__scr-item"
+            src="../../実験フォルダ/a.png"
+          />
+          <img class="detail__scr-item" src="../../実験フォルダ/b.jpeg" />
+          <img class="detail__scr-item" src="../../実験フォルダ/c.jpeg" />
         </div>
+        <img
+          class="detail__arrowone"
+          src="https://cdn3.iconfinder.com/data/icons/simple-arrows-essentials/48/v-09-512.png"
+        />
+      </div>
+
+      <!-- 概要文はこちら -->
+      <div class="detail__subtitle">活動概要</div>
+      <div class="detail__desc">
+        Mocchyを開発・運営するチームのご紹介です！<br>南山生を中心に、早稲田生、愛大生、海外大生（カーネギメロン大学等）など多様で個性的なメンバーで日々開発に励んでいます。<br />
+        発足の動機は「名古屋の情報格差をどうにかしたい」「東海でも関東・関西と同じ機会を得られるようにしたい」という想いで、まずは第一歩として、南山生が多くの魅力的な団体、イベント、フリーペーパーと出会えるようなウェブサイトを立ち上げました。
+      </div>
+      <div class="see-more_box">
+        <p class="see-more">全て表示</p>
+      </div>
+
+      <!-- 概要はこちら -->
+      <div class="detail__info">
+        <img
+          class="detail__icon"
+          src="https://image.flaticon.com/icons/svg/59/59252.svg"
+          alt="a"
+        />
+        <span>週7</span>
+        <img
+          class="detail__icon"
+          src="https://image.flaticon.com/icons/svg/34/34250.svg"
+          alt="a"
+        />
+        <span>南山大学、名古屋市内のカフェ</span>
+      </div>
+
+      <!-- メンバーからのひとことはこちら -->
+      <div class="detail__subtitle">メンバーからのひとこと</div>
+      <div class="comment">
+        <img
+          class="comment__icon"
+          src="../../モッチーについて/S__231111.jpg"
+        />
+        <div class="comment__name">伊藤大賀(Co-founder)</div>
+        <div class="comment__info">英米学科</div>
+        <p class="comment__title">世界の社会問題解決の第一歩</p>
+        <p class="comment__desc">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti repudiandae possimus, officiis consectetur maxime laborum debitis totam! Id facere quae, libero delectus, molestias sunt qui culpa aspernatur cum quibusdam exercitationem?
+        </p>
+      </div>
+      <div class="comment">
+        <img
+          class="comment__icon"
+          src="../../モッチーについて/S_20190212094052.jpg"
+        />
+        <div class="comment__name">長尾　満(Co-Founder)</div>
+        <div class="comment__info">アジア学科卒</div>
+        <p class="comment__title">まずは名古屋から</p>
+        <p class="comment__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum quam
+          architecto fuga laboriosam, explicabo nesciunt qui voluptatum
+          accusamus blanditiis molestiae perspiciatis, recusandae inventore
+          quisquam nam! Harum doloribus ex perferendis!
+        </p>
+      </div>
+
+      <!-- ハッシュタグはこちら -->
+      <div class="detail__subtitle">こんな人におすすめ</div>
+      <div class="detail__hashtag">
+        <ul>
+          <li>＃成長したい学生！</li>
+          <li>＃ITやビジネスに興味がある学生！</li>
+        </ul>
+      </div>
+
+      <!-- お問い合わせはこちら -->
+      <div class="detail__subtitle">お問い合わせ</div>
+      <div class="detail__contact">
+        <i class="fab fa-line"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-google-drive"></i>
       </div>
     </main>
 
     <footer class="footer">
-      <img
-        src="https://via.placeholder.com/50.png?text=M"
+      <!-- <img
+        src="http://flat-icon-design.com/f/f_event_100/svg_f_event_100_0nbg.svg"
         alt="Mocchy logo"
         class="footer__logo"
-      />
+      /> -->
       <div class="footer__title">Mocchy</div>
       <div class="footer__contact"><a href="#">お問い合わせ</a></div>
     </footer>
-    <script src="../../テンプレート/master.js"></script>
   </body>
+  <script src="../../テンプレート/master.js"></script>
+  <script src="../../テンプレート/detail.js"></script>
 </html>
