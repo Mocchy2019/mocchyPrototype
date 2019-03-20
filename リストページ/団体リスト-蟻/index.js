@@ -37,21 +37,22 @@ const groups = mkArr(50, randGroup);
 
 const reducer = (s, a) => ({ ...s, ...a });
 
-const init = {
-  genres: genres.reduce((ac, g) => {
-    ac[g] = true;
-    return ac;
-  }, {}),
-  official: true,
-  unofficial: true,
-  manyParties: true,
-  fewParties: true,
-  usefulForJob: true,
-  notUsefulForJob: true,
-  members01to10: true,
-  members11to50: true,
-  members51toInf: true,
-};
+const stateKeys = genres.concat([
+  "official",
+  "unofficial",
+  "manyParties",
+  "fewParties",
+  "usefulForJob",
+  "notUsefulForJob",
+  "members01to10",
+  "members11to50",
+  "members51toInf",
+]);
+
+const init = stateKeys.reduce((ac, g) => {
+  ac[g] = true;
+  return ac;
+}, {});
 
 // given the current user-selected criteria and an item, return whether that
 // item should be shown
@@ -60,7 +61,7 @@ const shouldShow = criteria => item =>
   (item.official ? criteria.official : criteria.unofficial) &&
   (item.manyParties ? criteria.manyParties : criteria.fewParties) &&
   (item.usefulForJob ? criteria.usefulForJob : criteria.notUsefulForJob) &&
-  criteria.genres[item.genre] &&
+  criteria[item.genre] &&
   ((0 < item.members && item.members <= 10 && criteria.members01to10) ||
     (10 < item.members && item.members <= 50 && criteria.members11to50) ||
     (50 < item.members && criteria.members51toInf));
@@ -73,67 +74,21 @@ const Checkbox = ({ name, checked, onChange }) =>
   e(
     "div",
     null,
-    e("input", { type: "checkbox", id: name, checked, onChange }),
-    e("label", { htmlFor: name }, name),
+    e("label", null, e("input", { type: "checkbox", checked, onChange }), name),
   );
 
 const Chooser = ({ s, d }) =>
   e(
     Fragment,
     null,
-    genres.map(g =>
+    stateKeys.map(g =>
       e(Checkbox, {
         key: g,
         name: g,
-        checked: s.genres[g],
-        onChange: e => d({ genres: { ...s.genres, [g]: e.target.checked } }),
+        checked: s[g],
+        onChange: e => d({ [g]: e.target.checked }),
       }),
     ),
-    e(Checkbox, {
-      name: "official",
-      checked: s.official,
-      onChange: e => d({ official: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "unofficial",
-      checked: s.unofficial,
-      onChange: e => d({ unofficial: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "manyParties",
-      checked: s.manyParties,
-      onChange: e => d({ manyParties: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "fewParties",
-      checked: s.fewParties,
-      onChange: e => d({ fewParties: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "usefulForJob",
-      checked: s.usefulForJob,
-      onChange: e => d({ usefulForJob: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "notUsefulForJob",
-      checked: s.notUsefulForJob,
-      onChange: e => d({ notUsefulForJob: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "members01to10",
-      checked: s.members01to10,
-      onChange: e => d({ members01to10: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "members11to50",
-      checked: s.members11to50,
-      onChange: e => d({ members11to50: e.target.checked }),
-    }),
-    e(Checkbox, {
-      name: "members51toInf",
-      checked: s.members51toInf,
-      onChange: e => d({ members51toInf: e.target.checked }),
-    }),
   );
 
 const ItemView = props =>
